@@ -13,7 +13,7 @@
 		5. [[Eventual Consistency]]
 4. Map Reduce and GFS
 	1. [[Map Reduce]]
-	2. [[GFS]]
+	2. [[GFS - Google File System]]
 
 5. Blockchain:
 	1. [[Blockchain]]

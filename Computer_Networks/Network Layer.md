@@ -69,8 +69,7 @@ Networks that provide only a connectionless service at the network layer are cal
 
 #### Virtual-Circuit (VC) Networks:
 
-![Untitled](file:///Users/phoenix/Documents/Obsidian%20Vault/Computer_Networks/images/virtual_circuits.png)
-
+![[virtual_circuits.png]]
 Virtual circuit Networks use connections at the network layer. These connections are called virtual circuits (VCs).
 
 A VC consists of
@@ -118,26 +117,38 @@ Because forwarding tables in datagram networks can be modified at any time, a se
 
 ##### Whats Inside a Router?
 
-![Untitled](file:///Users/phoenix/Documents/Obsidian%20Vault/Computer_Networks/images/router.png)
+![[router.png]]
 
-1. Input Port:
+1. **Input Port**:
+    The lookup function is performed at the input port. This will occur in the rightmost box of the input port. Here the forwarding table is consulted to determine the router output port to which an arriving packet will be forwarding via the switching fabric.
+	
+	**Input Port Queuing**
+	When the switching fabric is slower than the input ports combined, it leads to queuing at input port.
     
-    The lookup function is performed at the input port. this will occur in the rightmost box of the input port. Here the forwarding table is consulted to determine the router output port to which an arriving packet will be forwarding via the switching fabric.
-    
-2. Switching Fabric:
-    
+2. **Switching Fabric**:
     The switching fabric connects the routers input ports to its output ports.
-    
     Control packets are forwarded from an input port to the routing processor.
     
-3. Output ports:
-    
+3. **Output ports**:
     Stores the packets received from the switching fabric and transmits them by performing necessary link and physical layer functions.
-    
-4. Routing processors:
-    
-    Executes routing protocols, maintains routing tables and attached link state information.
+	
+	**Output port Buffering**:
+	Buffering when arrival rate via switch exceeds output line speed.
+	
+	*How much buffering?*
+	With N flows, buffering = $\frac{\text{RTT}\cdot C}{\sqrt{N}}$
+	
 
+4. **Routing processors**:
+    Executes routing protocols, maintains routing tables and attached link state information. Incoming reachability information from RIP/OSPF/BGP... is used to compute the ==RIB== (Routing Information Base) 
+
+###### RIB Routing Information Base
+Routers can have multiple RIB, one for each routing protocol. these individual TIBs are consolidated into one global RIB or into FIB.
+
+Contents:
+- Network ID of the destination subnet
+- Cost/Metric for hop
+- Next hop gateway or end-system
 
 ### [[Internet Protocol IP]]
 ### [[Routing Algorithms]]

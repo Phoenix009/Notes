@@ -103,7 +103,7 @@ TCP provides flow-control service to its applications to eliminate the possibili
 
 TCP provides flow control by having the ==sender maintain a variable called the receive window==.
 
-![Untitled](file:///Users/phoenix/Documents/Obsidian%20Vault/Computer_Networks/images/rcv_window.png)
+![[rcv_window.png]]
 
 Receiver tells the sender how much spare room it has in the connection buffer by placing its $\texttt{rwnd}$ value in the $\texttt{receive\_window}$ field for every segment is sends to sender.
 

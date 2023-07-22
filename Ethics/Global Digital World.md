@@ -47,29 +47,29 @@ Increased Demand for other goods
 Ex:
 Efficient car saves fuel $\rightarrow$ Saves Money $\rightarrow$ Saved money spent on other goods which need energy and resources
 
-### (Philosophical) Reasons for Environmental Protection:
+#### (Philosophical) Reasons for Environmental Protection:
 
-#### Precautionary Principle:
+##### Precautionary Principle:
 The precautionary principle says that action should be taken to prevent certain great dangers, even if there is scientific uncertainty about the likelihood of the danger. The mere existence of the danger just must be plausible enough.
 
-#### Moral:
+##### Moral:
 *Is nature valuable?*
 It is very clear that nature and the environment in general have huge extrinsic value for us, as it is literally our entire basis of existence.
 
 It is morally obligatory to protect the environment
 
 
-#### Rational:
+##### Rational:
 *It has to be rational to preserve nature, right?*
 
 **Tragedy of commons**: 
-A situation in which the use of a resource by everyone spoils the resource.
+A situation in which the use of a resource by everyone spoils the resource. Ex: Everyone grazes their cattle on a single pasture that destroys that pasture.
 
 The tragedy of commons is a problem is deciding that protecting the environment is rational or not.
 However, It is still morally right to protect the environment. We are still responsible for the damage we cause
 
 
-### Responsibility:
+#### Responsibility:
 Generally speaking, a person or a group of people are morally responsible when their voluntary actions have morally significant outcomes that would make it appropriate to blame or praise them.
 
 - **Backward-Looking Responsibility**:

@@ -19,6 +19,4 @@ If we totally order events while respecting lamport clocks, we wont violate caus
 
 
 
-
-
 Read: [[Bayou]]

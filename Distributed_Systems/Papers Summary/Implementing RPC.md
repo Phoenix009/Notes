@@ -2,7 +2,7 @@
 ### INTRODUCTION:
 Remote Procedure Calls is based on the observation that procedure calls are a well-known and well-understood mechanism for transfer of control within a program running on a single computer.
 
-It is proposed that this same mechanism be extended to provide for transfer of control and data across a communcication network.
+It is proposed that this same mechanism be extended to provide for transfer of control and data across a communication network.
 
 There are many attractive aspects to this idea:
 	1. Clean and Simple semantics

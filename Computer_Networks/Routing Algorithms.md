@@ -125,19 +125,24 @@ A router can also request information about its neighbours cost to a given desti
 
 OSPF and IS-IS protocols are typically deployed in top-tier ISPs whereas RIP is deployed in lower tier ISPs and enterprise networks.
 
-OSPF is a link-state protocol. A router constructs a complete topological map (that is, a graph) of the entire autonomous system. The router then locally runs Dijkstra’s shortest-path algorithm to determine a shortest-path tree to all subnets. 
+OSPF ==is a link-state protocol==. A router constructs a complete topological map (that is, a graph) of the entire autonomous system. The router then locally runs Dijkstra’s shortest-path algorithm to determine a shortest-path tree to all subnets. 
 
-With OSPF, a router broadcasts routing information to all other routers in the AS. A router broadcasts link state information whenever there is a change in a links state information and also periodically once at least once every 30s.
+With OSPF, a router broadcasts routing information to all other routers in the AS. A router broadcasts link state information whenever there is a change in a links state information and also periodically at least once every 30s.
 
 **Neighbour Discovery and Maintenance: HELLO Protocol**
 - Ensures bidirectional communication between neighbours
 - Ensures that neighbours agree on parameters (HELLO Interval, etc)
 
+> [!note]
+> OSPF requires bi-directional communication and wont work for uni-directional links
+
 How?
-- HELLO packets send to a fixed well known multicast address
+- HELLO packets send to a fixed well-known multicast address
 - Periodic HELLOs
 
 **OSPF Packets**
+Packets are directly sent to neighbours (TTL=1) using multicast address;
+
 Five packet types:
 1. HELLO
 2. Database Description
@@ -153,37 +158,45 @@ Five packet types:
 **Database Synchronisation**:
 All routers need to have identical databases
 
-How to check if the database are consistent?
-- Have the same \#LSA entries
-- Have the same sum for checksum
+> [!note] How to check if the database are consistent?
+> - Have the same \#LSA entries
+> - Have the same sum for checksum
 
 Two types of synchronisation:
-1. Initial Sync: After HELLO explicitly transfer of the database
-2. Continuous Synchronisation: Flooding
+1. Initial Sync: After HELLO explicitly transfer the database
+	- Database Description packets are sent ==one at a time== between neighbours
+	- Determine Master/Slave for DD exchange
+	- Determine which LSAs are missing in own DB
+	- Request those vis LS Request
+	- Neighbour sends these in LS Update packets
+
+2. Continuous Synchronisation: Reliable Flooding
+	- Flood the LS Update packet to all the neighbours expect the one it received the update from
+	- Same copy of LSA is an implicit ACK
+	- Use delayed ACKs
+	- All LSAs must be acknowledge either implicitly or explicitly.
 
 
-Some of the advanced features in OSPF:
+**Some of the advanced features in OSPF:**
 1. Security: Exchanges between OSPF routers can be authenticated. Only trusted routers can participate in the OSPF protocol within an AS.
    
 2. Multiple same cost paths: When multiple paths to a destination have the same cost, OSPF allows multiple paths to be used. 
    
 3. Integrated support for unicast and multicast routing: Multicast OSPF provides simple extension to OSPF providing multicast routing.
    
-4. Support for hierarchy within a single routing domain: the most significant advantage in OSPF is the ability ti structure an AS hierarchically. 
+4. Support for hierarchy within a single routing domain: the most significant advantage in OSPF is the ability to structure an AS hierarchically. 
 
 #### Inter-AS Routing: BGP
 
 ![[bgp.png]]
 
-BGP - Border Gateway Protocol is the de-factor standard inter-AS routing protocol. As an inter-AS routing protocol BGP provides each AS a means to 
+BGP - Border Gateway Protocol is the ==de-facto standard== inter-AS routing protocol. As an inter-AS routing protocol BGP provides each AS a means to 
 1. Obtain subnet reachability information from neighbouring ASs
-2. Propagate the reachability information to add routers internal to the AS.
+2. Propagate the reachability information to all routers internal to the AS.
 3. Determine "good" routes to subnets based on the reachability information and on AS policy
 
-
-In BGP, pairs of routers exchange routing information over semipermanent TCP connections. There is typically one such BGP TCP connection for each link that directly connects two routers in two different ASs; There are also semipermanent BGP TCP connections between routers within an AS. 
-
-For each TCP connection, the two routers at the end of the connection are called ==BGP peers==, and the TCP connection along with all the BGP messages sent over the connection is called ==BGP Session==.
+##### Neighbour Discovery and Maintenance:
+In BGP, pairs of routers called ==BGP peers== exchange routing information over semipermanent TCP connections called ==BGP sessions==.
 
 a BGP session that spans two ASs is called ==an external BGP (eBGP) session==, and a BGP session between routers in the same AS is called an ==internal BGP (iBGP) session==. 
 
@@ -194,19 +207,82 @@ BGP allows each AS to learn which destinations are reachable via its neighbourin
 - When a gateway router in any AS receives eBGP-learned prefixes, the gateway router uses iBGP sessions to distribute the prefixes to the outer routers in the AS.
 - Thus, all the routers in AS learn about the prefixes reachable from some another AS.
 
-
 ##### Path Attributes and BGP Routes:
 
 In BGP, an autonomous system is identified by its ==globally unique autonomous system number (ASN)==. 
 
-When a router advertises a prefix across a BGP session, it includes with the prefix a number of BGP attributes. In BGP jargon, a prefix along with its attributes is called a ==route==.
+When a router advertises a prefix across a BGP session, it includes with the prefix a number of BGP attributes. In BGP jargon, a prefix along with its attributes is called a ==route==. Thus a BGP ==route = Network Prefix + Attributes==
 
-Two of the important attributes are:
+Some of the important attributes are:
+###### AS-PATH:
+The attribute contains the ASs through which the advertisement for the prefix has passed. When a prefix is passed into an AS, the AS adds its ASN to the AS-PATH attribute. 
 
-##### AS-PATH:
-The attribute contains the ASs through which the advertisement for the prefix has passed. When a prefix is passed into an AS, the AS adds its ASN to the AS-PATH attribute. ==Routers use the AS-PATH attribute to detect and prevent looping advertisements==; specifically, if a router sees that its AS is contained in the path list, it will reject the advertisement.
+==Routers use the AS-PATH attribute to detect and prevent looping advertisements==; specifically, if a router sees that its AS is contained in the path list, it will reject the advertisement.
 
-##### NEXT-HOP:
+###### NEXT-HOP:
 The NEXT-HOP is the router interface that begins the AS-PATH. It is the IP address of the router interface. In essence the NEXT-HOP attribute is used by routers to properly configure their forwarding tables.
 
-When a gateway router receives a route advertisement, it uses its ==import policy== to decide whether to accept or filter the route and whether to set certain attributes such as the router preference metrics. The import policy may filter a route because the AS may not want to send traffic over one of the ASs in the route’s AS-PATH.
+###### Origin:
+
+###### Multiple Exit Discriminator:
+Which interface to chose if we get two equally "best" AS-PATH for the same AS. (Refer [[#BGP Route Selection]] for better understanding)
+
+- Non transitive: apply only to the immediate neighbours
+- Used to convey the relative preferences for entry points
+- Influences best path selection
+- ==Comparable if paths are from the same AS==
+- IGP metric can be conveyed as MED
+
+###### Local Preference:
+- Allows providers to prefer routes
+- Path with the highest local preference wins
+
+###### Community:
+Used to group prefixes and influence routing decisions. 
+
+##### BGP Route Selection
+When a gateway router receives a route advertisement, it uses its ==import policy== to decide whether 
+- to accept or filter the route and 
+- whether to set certain attributes such as the router preference metrics.
+The import policy may filter a route because the AS may not want to send traffic over one of the ASs in the route’s AS-PATH.
+
+![[bgp_route.png]]
+Router must learn more than one route to some prefix to make a decision which one is better.
+
+==The following elimination rules are used to select the "best route":==
+- Local Preference attribute: Policy decision
+- Shortest AS-PATH
+- Best MED
+- Closest NEXT-HOP router: Hot Potato routing
+- Additional Criteria
+- IP Address of peer
+
+BGP does not load balance traffic. It chooses and installs a single "best" route. 
+
+##### Routing Policies:
+BGP provides capabilities for enforcing various policies. Policies are used to configure BGP and reflects the goals of the network provider. These goals include
+- Which routes to accept from other ASs
+- How to propagate routes through the network etc.
+
+BGP enforces policies by
+- Choosing paths from multiple alternatives
+- Controlling advertisements to other ASs
+
+**AS Type and policies**
+- **Providers**: Offer connectivity to direct customer, offer transmit to other ISPs
+- **Customer**: Buy connectivity from providers
+- **Peers**: Exchange customer traffic at no cost
+- **Siblings**: Others
+
+| | Own routes| Customers routes| Siblings routes | Providers Routes | Peers routes|
+|--|--|--|--|--|--|
+| Exporting to Provider|Y|Y|Y|N|N|
+| Exporting to Customer|Y|Y|Y|Y|Y|
+| Exporting to Peer|Y|Y|Y|N|N|
+
+
+##### iBGP:
+- Same routing protocol as BGP
+- Should be used when the AS_PATH information must remain intact between multiple eBGP peers
+- All ==iBGP peers must be fully meshed== logically. an iBGP peer will not advertise a route learned by one iBGP peer to another iBGP peer. This is to prevent looping
+

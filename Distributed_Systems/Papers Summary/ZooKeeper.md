@@ -71,7 +71,7 @@ Configuration is stored in a znode $z_c$. Process start up with the full pathnam
 It is not always clear apriori what the final system configuration will look like.
 
 - Client want to start a master process and several worker processes. 
-- Client does not know ahead of time information such as the address and port# for connecting to the master
+- Client does not know ahead of time information such as the address and port# for the worker processes to connect to the master
 - We use a rendezvous node $z_r$, which is a node created by the client
 - When the master starts it fills in $z_r$ with information
 - Workers read the node with watch flag. If the node is not updated yet, workers wait for the notification.

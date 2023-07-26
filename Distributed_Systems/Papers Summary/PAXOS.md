@@ -61,3 +61,5 @@ If the proposer receives the requested responses from a majority of the acceptor
 For an acceptor: Receives two kinds of requests:
 1. Prepare request: It can always accept a prepare request
 2. Accept request: An acceptor can accept a proposal number n iff it has not responded to a prepare request having a number greater than n
+
+*How is this not fault tolerant?*

@@ -1,4 +1,4 @@
-Rule: Loads will always see the mose recent Store made by any machine
+Rule: Loads will always see the most recent Store made by any machine
 
 Under strict consistency rules:
 

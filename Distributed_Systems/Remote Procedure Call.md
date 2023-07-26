@@ -1,10 +1,9 @@
 
-Makes the programming of distributed systems look similar, if not identical, to conventional progrmaming - acheiving high level of distribution transparency.
+Makes the programming of distributed systems look similar, if not identical, to conventional programming - achieving high level of distribution transparency.
 
 
 #### RPC Call Semantics:
-
-A remote operation can be implemented in different ways to provide different delivery guarantees. The main choices are:
+Request-reply protocols can be implemented in different ways to provide different delivery guarantees. The main choices are:
 
 1. ==Retry Request message==: Retransmit the request until either a reply is received or the server is assumed to have failed.
 
@@ -13,6 +12,8 @@ A remote operation can be implemented in different ways to provide different del
 3. ==Retransmission of Results==: keeps a local histroy of result messages to enable lost results to be retransmitted without reexecuting the operations at the server.
 
 Combinations of these choices lead to a variety of possible semantics for the reliability of remote invocations.
+
+![[RPC_semantics.svg]]
 
 
 ##### 1. Maybe Semantics:

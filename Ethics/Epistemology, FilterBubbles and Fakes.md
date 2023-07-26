@@ -34,12 +34,12 @@ Example: For anonymity
 
 
 #### Explication of knowledge:
-Knowledge is True, Justified and a Belief
+Knowledge is **True**, **Justified** and a **Belief**
 
 ##### When is a belief justified?
 One explanation can be such that, A belied is said to be justified iff we have other beliefs which jointly support the original belief. This explanation requires all the supporting beliefs to be justified as well.
 
-Now we enter the ==justification trillema==. According to the justification trilemma one of the following is true:
+Now we enter the ==justification trillema==. According to the justification trilemma ==one of the following is true==:
 1. There is an infinite regress of justifying beliefs
 2. There are beliefs that are justified/unjustified.
 	==Fundamentalism==: There are certain fundamental beliefs that need no justification. 
@@ -59,6 +59,9 @@ A filter bubble might
 - fabricate justifications for falsehoods
 - make many coherent falsehoods that they start justifying each other
 
+
+> [!info] Info: Filter Bubbles are rare
+> Filter bubbles and echo chambers are not very common and do harm seldomly
 
 #### Confirmation Bias:
 The tendency to search for, interpret, favour and recall information that confirms or supports ones prior personal belief or values.

@@ -4,20 +4,20 @@ However, use of global locks leads to no concurrency at all. Only one machine ca
 
 ==Variable lock granularity== approach uses one lock per logical object. 
 
-Locks alone dont provide consistency. ==Updates must propagate when a lock is acquired or release by another party==. 
+Locks alone do not provide consistency. ==Updates must propagate when a lock is acquired or release by another party to ensure consistency==. 
 
 ### Release Consistency - Eager Update Propagation:
 ==Push== updates to all threads when ==releasing== the lock.
 
-Release consistency model permits a processor to delay making its changes to shared data visible to other processors until certain synchronication accesses occur.
+Release consistency model permits a processor to delay making its changes to shared data visible to other processors until certain synchronisation accesses occur.
 
 ### Lazy Release Consistency - Lazy Update Propagation:
 ==Pull== updates from the previous owner when ==acquiring== lock.
 
-When propagating updates all the updates to all objects are propagated. This propagation of updates can be optimized.
+When propagating updates all the updates to all objects are propagated. This propagation of updates can be optimised.
 
 ***On Demand Data Transfer - Invalidation***:
-Why pull pages that we dont require?
+Why pull pages that we don't require?
 
 At lock acquire, propagate only list of updates page ids, called ==invalidate set==. The acquirer invalidates these pages in its page table.
 

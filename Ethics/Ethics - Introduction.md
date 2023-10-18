@@ -3,9 +3,9 @@ Do precise thinking. Very important for structuring your arguments for what is e
 
 
 ### Ethics:
-1. *Meta Ethics* - Concerned with the nature of moral properties, statments and judgements. Ex: What is the meaning of "right" or "good"?
-2. *Normative Ethics* - The stude of moral actions. Ex: What properties make an action morally right?
-3. *Applied Ethics* - Concerned with the moral status of certain practices or issues. Ex: Has snowden done the right thing? Is it wront to eat mea from intensive animal farming?
+1. *Meta Ethics* - Concerned with the nature of moral properties, statements and judgements. Ex: What is the meaning of "right" or "good"?
+2. *Normative Ethics* - The study of moral actions. Ex: What properties make an action morally right?
+3. *Applied Ethics* - Concerned with the moral status of certain practices or issues. Ex: Has Snowden done the right thing? Is it wrong to eat mea from intensive animal farming?
 
 The focus of normative ethics is to find a theory that is accurate regardless of how useful it is in the real life. Whereas, applied ethics cares about both being accurate and being able to be applied in real life scenarios.
 
@@ -17,7 +17,7 @@ The focus of normative ethics is to find a theory that is accurate regardless of
 	
 	An agent decides on an action and performs it. This may affect patients. Moral subjects and objects are what has moral status.
 	
-	Moral Patients: "The question is not, can they reason? Can they talk? but, can they suffer?"
+	Moral Patients: *"The question is not, can they reason? Can they talk? but, can they suffer?"*
 
 3. Decision Situations:
 	1. Objective: An agent has options for choosing an action and ==knows what are their consequences==.
@@ -41,7 +41,7 @@ The moral/deontic status of an action solely depends on its consequences (and th
 
 Agent A ought to perform one of the right actions.
 
-An action $\phi$ is a right action iff the ==relevant qualities== of the ==consequences== of $\phi$ fulfill a ==specific condition==.
+An action $\phi$ is a right action iff the ==relevant qualities== of the ==consequences== of $\phi$ fulfil a ==specific condition==.
 
 ##### Which Qualities?
 Depends on the *Axiology*.
@@ -93,7 +93,7 @@ Consider utilitarianism:
 The actions is right iff no alternative action has a higher sum of pleasure - pain.
 
 Misnomer: *Rule Consequentialism*: 
-An action is right iff it ==adheres to a right set of rules==. A set of rules is right iff the general adherenec to these rules has consequences, where the relevant qualities of these consequences fulfill a specific condition.
+An action is right iff it ==adheres to a right set of rules==. A set of rules is right iff the general adherence to these rules has consequences, where the relevant qualities of these consequences fulfil a specific condition.
 
 Misconception: Every action can be justified with consequentialism.
 "The end justifies the means" does not mean the same as "Every means is always justified".

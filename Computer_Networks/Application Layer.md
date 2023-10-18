@@ -1,4 +1,4 @@
-
+ 
 ### Network Application Architectures:
 From the application developer perspective, ==the network architecture is fixed== and provides a specific set of services to applications.
 
@@ -70,13 +70,13 @@ Transport protocols can guarantee available throughout at some specified rate. W
 
 Applications that have throughput requirements are said to be bandwidth-sensitive applications. Many current multimedia applications are bandwidth sensitive.
 
-Elastic applications on the other hand can make use of as much throughput that is available to them. ex: Electronic mail.
+Elastic/Bandwidth-insensitive applications on the other hand can make use of as much throughput that is available to them. ex: Electronic mail.
 
 #### 3. Timing:
 
 A transport layer protocol can also provide timing guarantees. Such a service would be appealing to interactive real-time applications, all of which require tight timing constraints on data delivery in order to be effective. ex: Interactive online games.
 
-For non-real-time applications, lower delay is always prefereble to higher delay, but no tight constraint is place on the end-to-end delays.
+For non-real-time applications, lower delay is always preferable to higher delay, but no tight constraint is place on the end-to-end delays.
 
 #### 4. Security:
 
@@ -97,13 +97,13 @@ The TCP service model includes a connection-oriented service and a reliable data
 
 TCP has the client and server exchange transport layer control information with each other before the application level messages begin to flow. 
 
-After the handshaking, a TCP connection is said to exist betwen the sockets of the two processes.
+After the handshaking, a TCP connection is said to exist between the sockets of the two processes.
 
-When the appplication finishes sending messages, it must tear down the connection.
+When the application finishes sending messages, it must tear down the connection.
 
 ##### 2. Reliable Data Transfer:
 
-The communicating process can rely on TCP to deliver all data sent without error and in the proper order.
+The communicating process can rely on TCP to deliver all data without error and in the proper order.
 
 ##### 3. Congestion Control:
 Throttle sender when network gets overloaded
@@ -116,7 +116,7 @@ Throttle sender when receiver gets overloaded
 
 UDP is a lightweight transport protocol, providing minimal services. It is connectionless and provides unreliable data transfer service.
 
-UDP provides no guarantee that the message will ever reach the receiving processs. Furthermore, messages that do arrive at the receiving process may arrive out of order.
+UDP provides no guarantee that the message will ever reach the receiving process. Furthermore, messages that do arrive at the receiving process may arrive out of order.
 
 ### [[Web and HTTP]]
 ### [[DNS - Internets Directory Service]]

@@ -3,9 +3,9 @@
 
 We first consider the simplest case, in which the underlying channel is completely reliable.
 
-![Untitled](file:///Users/phoenix/Documents/Obsidian%20Vault/Computer_Networks/images/rdt1.0.png)
+![[rdt1.0.png]]
 
-All packet flow is from sender to reciever, with a perfectly reliable channel there is no need for the receiver side to provide any feedback to the sender since nothing can go wrong.
+All packet flow is from sender to receiver, with a perfectly reliable channel there is no need for the receiver side to provide any feedback to the sender since nothing can go wrong.
 
 We have assumed that the receiver is able to receive as fast as sender can send. Thus, no need for receiver to ask the sender to slow down.
 
@@ -20,14 +20,14 @@ We will use positive and negative acknowledgements that will allow the receiver 
 
 Reliable data transfer protocol based on such retransmission are known as ARQ (Automatic Repeat Request).
 
-![Untitled](file:///Users/phoenix/Documents/Obsidian%20Vault/Computer_Networks/images/rdt2.0.png)
+![[rdt2.0.png]]
 
 
 Three additional protocol capabilities are required in ARQ protocols to handle the presence of bit errors:
 
-1. Error Detection: a mechanism to allow the receiver to detect when bit errors have occured
-2. Receiver feedback: Our $\texttt{RDT 2.0}$ protocol will send $\texttt{ACK}$ and $\texttt{NAK}$ packets from the receiver to the sender.
-3. Retransmission: A packet that is received in error will be retransmitted by the sender.
+1. **Error Detection**: a mechanism to allow the receiver to detect when bit errors have occured
+2. **Receiver feedback**: Our $\texttt{RDT 2.0}$ protocol will send $\texttt{ACK}$ and $\texttt{NAK}$ packets from the receiver to the sender.
+3. **Retransmission**: A packet that is received in error will be retransmitted by the sender.
 
 Protocol $\texttt{RDT 2.0}$ may look as if it works but, unfortunately, has a fatal flaw. In particular we have not accounted for the possibility that the $\texttt{ACK}$ or $\texttt{NAK}$ packet could be corrupted. In this case the sender has no way of knowing whether or not the receiver has correctly received the last piece of data.
 
@@ -35,9 +35,9 @@ Protocol $\texttt{RDT 2.0}$ may look as if it works but, unfortunately, has a fa
 
 How should the protocol recover from errors in acknowledgements?
 
-An alternativeis to add error correction that allows the sender to detect as well as correct the bit errors. This solves the immediate problem for a channel that can corrupt packets but not lose them
+An alternative is to add error correction that allows the sender to detect as well as correct the bit errors. This solves the immediate problem for a channel that can corrupt packets but not lose them
 
-A second approach is for the sender to simply resent the current data packet when it receives a garbled acknowledgement.
+==A second approach is for the sender to simply resent the current data packet when it receives a garbled acknowledgement.==
 
 The fundamental difficulty with duplicate packets is that the receiver does not know whether the packet contains new date or is it a retransmission.
 

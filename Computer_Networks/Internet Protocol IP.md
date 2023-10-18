@@ -25,7 +25,7 @@ The Internet’s network layer has three major components.
 
 4. $\texttt{Datagram Length}$ - $\texttt{16b}$  is the total length of the IP Datagram ($\texttt{header + data}$). Imposes an upper bound to the datagram length ($\texttt{65535B}$).
 
-5. $\texttt{Identifier, FLG, Fragmentation Offset}$ - These fields are related to IP Fragmentation
+5. $\texttt{Identifier, FLG, Fragmentation Offset}$ - These fields are related to IP Fragmentation. 
 
 6. $\texttt{TTL}$ - $\texttt{8b}$ used to ensure that datagrams do not circulate forever in the network. The field is decremented by each router. If $\texttt{TTL == 0}$ then drop then datagram.
 
@@ -182,7 +182,7 @@ Private IP Address Range:
 
 Private addresses only have meaning within a given network, *how is addressing handled when packets are sent to or received from the global internet?* The answer lies in $\texttt{NAT}$.
 
-$\texttt{NAT}$ router behaves to the outside world as a single devide with a single $\texttt{}$$\texttt{IP Address}$. In essence, the $\texttt{NAT}$ router is hiding the details of the network from the outside world.
+$\texttt{NAT}$ router behaves to the outside world as a single device with a single $\texttt{}$$\texttt{IP Address}$. In essence, the $\texttt{NAT}$ router is hiding the details of the network from the outside world.
 
 ![[NAT_translation.png]]
 
@@ -237,7 +237,7 @@ The most important changes introduced in $\texttt{IPv6}$ are evident in the data
 
 1. Expanded Addressing Capabilities:
     
-    $\texttt{IP}$ address size is not $\texttt{128b}$. This ensures that the world won’t run out of $\texttt{IP}$ addresses.
+    $\texttt{IP}$ address size is $\texttt{128b}$. This ensures that the world won’t run out of $\texttt{IP}$ addresses.
     
     In addition to the unicast and multicast addresses, $\texttt{IPv6}$ has introduced anycast address, which allows a datagram to be delivered to any one of a group of hosts.
     

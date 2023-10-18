@@ -1,6 +1,6 @@
 1. [[Concurrency]]
 2. [[Remote Procedure Call]]
-3. [[Consistency]]
+3. [[Notes/Distributed_Systems/Consistency]]
 	1. [[Strict Consistency]]
 	2. [[Sequential Consistency]]
 	3. [[Release Consistency]]
@@ -19,6 +19,8 @@
 11. [[Big Data]]
 12. [[Federated Learning]]
 13. [[Security]]
+14. [[Important ideas and concepts]]
+15. 
 
 
 BFT made practical

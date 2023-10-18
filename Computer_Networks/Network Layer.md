@@ -61,8 +61,6 @@ A network-layer can provide connectionless service or connection oriented servic
 
 The transport layer connection-oriented service is implemented at the edge of the network in the host systems. The network layer connection-oriented service is implemented in the routers in the network cores as well as in the end-systems
 
-The network layer provides either a connection-less service or a connection-oriented service.
-
 Networks that provide only a connection-oriented service at the network layer are called ==virtual-circuit (VC) networks.==
 
 Networks that provide only a connectionless service at the network layer are called ==datagram networks==.
@@ -87,10 +85,10 @@ There are three identifiable phases in a VC:
 1. **VC Setup**:
     1. The network layer determines the path between the sender and receiver.
     2. determine the $\texttt{VC\#}$ for each link along the path
-    3. Add an entry in the forwarding table of each router in the path (Which entry i dont remember :( )
-2. Data Transfer:
+    3. Add an entry in the forwarding table of each router in the path 
+2. **Data Transfer:**
     1. VC is established so the packets can flow
-3. VC Teardown:
+3. **VC Teardown**:
     1. Sender informs the network layer to terminate the connection
     2. Update the destination network layer
     3. update the forwarding table of the routers on the path.

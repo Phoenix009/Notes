@@ -17,21 +17,19 @@ This consistency model can be actually implemented for distributed systems.
 ### Implementation
 
 #### 1. Primary Server:
-Designate a primary machine. Every machine sends the `read` and `write` operations to the primary.
-
-The order in which the primary executes the writes determines the total order of the operations.
-
-The operations are slow. Every operation goes over the network
-The primary server is the bottleneck.
+- Designate a primary machine. Every machine sends the `read` and `write` operations to the primary.
+- The order in which the primary executes the writes determines the total order of the operations.
+- The operations are slow. Every operation goes over the network
+- The primary server is the bottleneck.
 
 #### 2. Partition Memory:
-Divides the memory into partitions. Each machine is assigned as the primary for different partitions.
-
-this spreads the storage loads across machines. Good performance is acheived if the machines operate mostly on the local partitions.
+- Divides the memory into partitions. 
+- Each machine is assigned as the primary for different partitions.
+- This spreads the storage loads across machines. Good performance is achieved if the machines operate mostly on the local partitions.
 
 #### 3. Global Locks:
-This implementaiton of SC uses one global lock for all addresses in memory. To access memory, machine must first acquire lock, operate on locked memory, release lock.
+- This implementation of SC uses one global lock for all addresses in memory. 
+- To access memory, machine must first acquire lock, operate on locked memory, release lock.
+- This implementation attains SC, total order is determined by the locks movement.
 
-This implementation attains SC, total order is determined by the locks movement.
-
-Read: [[IVY - Shared Virtual Memeory System]]
+Read: [[IVY - Shared Virtual Memory System]]

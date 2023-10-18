@@ -15,7 +15,7 @@ It is possible for an application to have reliable data transfer when using UDP.
 
 ### Segment Structure:
 
-![Connection less transport - UDP](file:///Users/phoenix/Documents/Obsidian%20Vault/Computer_Networks/images/udp_segment.png)
+![[udp_segment.png]]
 
 The application data occupies the data field of the UDP segment.
 

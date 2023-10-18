@@ -11,13 +11,13 @@ Since three segments are sent between client and host for connection establishme
 Once a TCP connection is established, the two application processes can send data to each other.
 
 ### TCP Segment Structure:
-![TCP Segment Structure](file:///Users/phoenix/Documents/Obsidian%20Vault/Computer_Networks/images/tcp_segment.png)
+![[tcp_segment.png]]
 
 The header includes the following fields:
 
 1. `Source Port#`, `Destination Port#`: for multiplexing and demultiplexing
 2. `SEQ#`, `ACK#`: for implementing $\texttt{RDT}$
-3. 4b `Header length`: specifies the length of the TCP header in `32b` words. Header length can be variable due to the `options` field.
+3. 4b `Header length`: v
 4. The `flag` field contains 6b.
     1. `ACK` the segment contains an ACK
     2. `RST`, `SYN` and `FIN` are used for connection setup and teardown
@@ -78,7 +78,7 @@ A few modifications that most TCP implementations employ:
     This ==modification provides a limited form of congestion control==.
 
 2. *Fast Retransmit*:
-    One of the problems with timeout-triggered retransmission is that the timeout period can be relatively long. Fortunately, the sender can often detect packet loss well before the timeout event occurs by noting duplicate $\texttt{ACK}s$
+    One of the problems with timeout-triggered retransmission is that the  timeout period can be relatively long. Fortunately, the sender can often detect packet loss well before the timeout event occurs by noting duplicate $\texttt{ACK}s$
     
     Because a sender often sends a large number of segments back to back, if one segment is lost there will likely be many back to back duplicate $\texttt{ACK}$.
     
@@ -119,7 +119,7 @@ To avoid this TCP specification requires the sender to send segments with one by
 
 ### Connection Management:
 
-![TCP Connection Management](file:///Users/phoenix/Documents/Obsidian%20Vault/Computer_Networks/images/tcp_client_states.png)
+![[tcp_client_states.png]]
 
 
 #### 3-way handshake steps:
@@ -179,7 +179,7 @@ The approach taken by TCP is to have each sender limit the rate at which sends t
 
 #### Congestion Control Algorithm
 
-![TCP congestion control](file:///Users/phoenix/Documents/Obsidian%20Vault/Computer_Networks/images/tcp_congestion_control.png)
+![[tcp_congestion_control.png]]
 
 ##### 1. Slow Start:
 
@@ -251,7 +251,7 @@ $L$ is the loss rate.
 
 
 #### Fairness
-![tcp fairness](file:///Users/phoenix/Documents/Obsidian%20Vault/Computer_Networks/images/fairness.png)
+![[fairness.png]]
 
 It has been shown that when multiple connections share a common bottleneck, those sessions with a smaller $\texttt{RTT}$ are able to grab the available bandwidth at that link more quickly as it becomes free and thus will enjoy higher throughput than those connections with larger $\texttt{RTT}$. 
 

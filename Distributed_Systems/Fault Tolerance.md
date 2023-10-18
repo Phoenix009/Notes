@@ -8,3 +8,4 @@ Can be done using:
 1. [[Write Ahead Logs]]
 2. [[Replication]]
 3. [[Chain Replication]]
+

@@ -40,7 +40,7 @@ In the above example the paths are oscillating from clockwise paths to counter-c
 
 The distance vector algorithm is 
 1. **Distributed**: Each node receives some information from one or more of its directly attached neighbours, performs a calculation and distributes the result back to its neighbours.
-2. **Iterative**: process continues until no more information is exchanged between neighboUrs
+2. **Iterative**: process continues until no more information is exchanged between neighbors
 3. **Asynchronous**: Does not require all of the nodes to operate in lockstep with each other.
 
 ##### Bellman-Ford Equation:
@@ -112,7 +112,7 @@ The distance vector for any one router is the current estimate of the shortest p
 
 Each router maintains a RIP table known as the ==routing table== which contains both the routers distance vector and its forwarding table. 
 
-RIP advertisements are sent after every 30s. If a router does not head from neighbour at least once every 180s, that neighbour is considered to be no longer reachable; RIP then updates the routing information and sends advertisements.
+RIP advertisements are sent after every 30s. If a router has not heard from neighbour at least once every 180s, that neighbour is considered to be no longer reachable; RIP then updates the routing information and sends advertisements.
 
 >[!note]
 > Each advertisement can list only up to 25 destination networks within AS 
@@ -167,11 +167,11 @@ Two types of synchronisation:
 	- Database Description packets are sent ==one at a time== between neighbours
 	- Determine Master/Slave for DD exchange
 	- Determine which LSAs are missing in own DB
-	- Request those vis LS Request
+	- Request those via LS Request
 	- Neighbour sends these in LS Update packets
 
 2. Continuous Synchronisation: Reliable Flooding
-	- Flood the LS Update packet to all the neighbours expect the one it received the update from
+	- Flood the LS Update packet to all the neighbours except the one it received the update from
 	- Same copy of LSA is an implicit ACK
 	- Use delayed ACKs
 	- All LSAs must be acknowledge either implicitly or explicitly.
@@ -204,7 +204,7 @@ BGP allows each AS to learn which destinations are reachable via its neighbourin
 
 *How BGP distribute prefix reachability information over the BGP sessions?*
 - the eBGP session is used to exchange prefix reachability information between ASs.
-- When a gateway router in any AS receives eBGP-learned prefixes, the gateway router uses iBGP sessions to distribute the prefixes to the outer routers in the AS.
+- When a gateway router in any AS receives eBGP-learned prefixes, the gateway router uses iBGP sessions to distribute the prefixes to the other routers in the AS.
 - Thus, all the routers in AS learn about the prefixes reachable from some another AS.
 
 ##### Path Attributes and BGP Routes:
@@ -257,7 +257,7 @@ Router must learn more than one route to some prefix to make a decision which on
 - Additional Criteria
 - IP Address of peer
 
-BGP does not load balance traffic. It chooses and installs a single "best" route. 
+==BGP does not load balance traffic. It chooses and installs a single "best" route.== 
 
 ##### Routing Policies:
 BGP provides capabilities for enforcing various policies. Policies are used to configure BGP and reflects the goals of the network provider. These goals include

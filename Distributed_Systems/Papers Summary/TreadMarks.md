@@ -20,7 +20,7 @@ Permits a processor to delay making its changes to shared data visible to other 
 #### [[Release Consistency#Lazy Release Consistency - Lazy Update Propagation:|Lazy Release Consistency]]:
 In LRC the propagation of modifications is postponed until the time of the ==acquire==.
 
-The pulling of the updates is transitive, when pulling the udpates from the previous owner, all the updates that the previous owner has seen, have to be pulled.
+The pulling of the updates is transitive, when pulling the updates from the previous owner, all the updates that the previous owner has seen, have to be pulled.
 
 How do we know which of the pulled updates are new and which are already applied?
 

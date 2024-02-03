@@ -9,7 +9,7 @@ What is a feature?
 - Is a means to communicate among stakeholders
 - Used to specify product variants
 
-Basic Definitions:
+**Basic Definitions:**
 
 | | | |
 |-|-|-|
@@ -17,14 +17,14 @@ Basic Definitions:
 |$S = \mathscr{P}(F)$| Set of all possible feature selections|$\{\{\}, \{a\}, \{b\}, \{a, b\}\}$|
 |$C \subseteq S$|Set of variants / Valid feature selections|$\{\{a\}, \{b\}\}$|
 
-Function Representations:
+**Function Representations:**
 
 | | | |
 |-|-|-|
 |$V: F \rightarrow \{0, 1\}$| Provides a mapping of features to selected or deselected|$\{(a, 0), (b, 1)\}$|
 |$\chi: V \rightarrow S$| $\chi(v) = \{f \mid v(f) = 1\}$ Gives a set of features that are selected|$\{b\}$|
 
-Domain Engineering:
+**Domain Engineering:**
 Is the activity of collecting, organising and storing past experiences in building systems in a ==particular domain== in the form of reusable assets as well as ==providing an adequate means for reusing== these assets when building new systems
 
 
@@ -57,4 +57,19 @@ Basic Definitions:
 |$S = \mathscr{P}(F)$| Set of all possible feature selections|$\{\{\}, \{a\}, \{b\}, \{a, b\}\}$|
 |$\Phi \in \mathbb{B}_F$| Boolean formula over $F$| $a \Rightarrow b$|
 |$C$|System Variants/valid feature selections|$\{\{\}, \{b\}, \{a, b\}\}$|
+
+
+### Feature models as Feature Diagrams:
+Abstract Syntax:
+	!TODO
+
+#### From Feature Diagrams to Propositional Formulas
+
+
+
+### Feature Model Analysis:
+- Is a feature selection valid?
+- **Model Consistency**: Is there at least one valid feature selection?
+- **Selectable and De-selectable Features**: Is a given feature selectable given a prior configuration?
+- **Dead, Mortal and Immortal Features**: Which features must, must not and maybe selected?
 

@@ -26,4 +26,10 @@ What kind of bugs to expect?
 - Rogue Numbers:
 	Corner cases basically.
 
- 
+
+## Catching Errors
+
+### Generic Checkers
+#### Checking Memory Accesses:
+To check problematic memory accesses during testing, one can run C programs in special memory checking environments; at runtime, these check for each and every memory operations.
+

@@ -20,8 +20,6 @@
 12. [[Federated Learning]]
 13. [[Security]]
 14. [[Important ideas and concepts]]
-15. 
-
 
 BFT made practical
 Byzantine Fault Tolerance

@@ -1,0 +1,5 @@
+1. [[Syntax Analysis]]
+2. [[Semantic Analysis]]
+3. [[Program Analysis]]
+4. [[Intermediate Representation]]
+5. [[SSA - Single Static Assignment]]

@@ -55,6 +55,7 @@ $$|C| = \mathcal{O}(2^{|F|})$$
 - The features are used as independent variables or regressors.
 - the non functional property is the dependent variable.
 - We train a linear regression model that can then predict the non functional property.
+
 $$\begin{equation}
 y = \mathbf{x}^\top \mathbf{\beta} + \epsilon
 \end{equation}$$

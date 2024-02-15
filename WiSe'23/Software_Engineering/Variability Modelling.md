@@ -2,7 +2,7 @@
 
 - A **software product line** offers a number of ==features== that a stake holder can select to create a ==tailor-made software product==
 
-What is a feature?
+**What is a feature?**
 - Key abstraction of the application domain
 - Fulfils one or more requirements
 - Represents commonalities and variability among product variants

@@ -30,7 +30,7 @@ The discussion of non-functional properties helps us to answer some of the follo
 
 
 ## Overview:
-We have out configuration space which represent every possible configuration/feature-selection.
+We have our configuration space which represent every possible configuration/feature-selection.
 $$|C| = \mathcal{O}(2^{|F|})$$
 ### 1. Measurement:
 - The goal is to measure non-functional properties via sampling

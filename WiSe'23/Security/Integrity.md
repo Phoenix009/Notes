@@ -80,7 +80,7 @@ Cryptographic hash functions used in practice generally have a fixed output leng
 $$H:\{0, 1\}^* \rightarrow \{0, 1\}^l$$
 
 
-This is problematic from a theoretic standpoint since for any such function there is always a constant time algorithm that output s collision in $H$
+This is problematic from a theoretic standpoint since for any such function there is always a constant time algorithm that outputs a collision in $H$
 
 However, the unkeyed cryptographic hash functions used in real world are collisions resistant for all practical purposes since colliding pairs are unknown and computationally difficult to find.
 

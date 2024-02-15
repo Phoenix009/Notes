@@ -34,6 +34,16 @@ the drawbacks are as follows:
 - Merging branches is a problematic composition technique. 
 - Although language-specific merge mechanisms exist merging is usually performed in a text-based fashion, oblivious to the meaning of the merged artefacts
 
+## Discussion:
+## Strong Points:
+- Well known, established and mature tools
+- Arbitrary compile time customisation independent of granularity and cross cutting
+- Minor effort in pre planning
+### Weak Points:
+- No feature traceability, no separation of feature code and no information hiding
+- Relies on merging, prone to conflicts and errors.
+- Hard to maintain with many branches, Fixes must be pushed to all the branches.
+
 # 2. Build Systems:
 A build system is responsible for scheduling and executing all build-related tasks, which may include running generators, compiling source code, running tests, and creating and copying deliverable units.
 
@@ -66,4 +76,26 @@ Since a build system already decides when, what and how to compile, it is an obv
 
 ## Variability with Preprocessors
 - typical way to implement variability with preprocessors is to wrap a code fragment with conditional compilation directives such as `#ifdef` and `#endif`, such a code fragment is called **annotated**.
-- 
+- Depending on whether a certain macro is defined, the code fragments are included or removed before compilation.
+
+## Disciplined Annotations:
+Preprocessors are powerful tools that allow almost arbitrary source code manipulation at compile time. The power comes at the price of writing complex and hard to maintain and understand source code.
+
+We say an annotation is disciplined, if it aligns with the source code structure of a language.
+
+Disciplined annotations can be mapped to elements of the documents abstract syntax tree and are restricted to selected structures, typically top level declarations fields and statements but not subexpressions or parameter declarations.
+
+The notion of disciplined annotations can help developers to avoid complex ad hoc implementations that might be hard to maintain. We argue that disciplined annotations are usually also easier to read and maintain.
+
+## Discussion:
+### Strong Points:
+- Easy to use
+- Simple programming model
+- Compile time customisation of the source code. No boiler plate code
+- Little preplanning required
+
+### Weak Points:
+- Scattering and tangling of feature code and configuration knowledge
+- No support for information hiding
+- Prone to simple errors
+- Difficult to analyse and to write tool support for the underlying language.

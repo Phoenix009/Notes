@@ -116,12 +116,12 @@ $$c := m^e\mod N$$
 $$m := c^d \mod N$$
 
 # Digital Signatures
-Integrity (or authenticity) in the public-key setting is provided using digital signature schemes.
+Integrity and Authenticity in the public-key setting is provided using digital signature schemes.
 
 Signature schemes allow a signer $\mathcal{S}$ who has established a public key $pk$ to “sign” a message using the associated private key $sk$ in such a way that anyone who knows $pk$ (and knows that this public key was established by $\mathcal{S}$) can verify that the message originated from $\mathcal{S}$ and was not modified in transit.
 
 ## Comparison to MACs:
-Both message authentication codes and digital signature schemes are used to ensure the integrity of transmitted message. However, there are important advantages of digital signatures over MACs as follows:
+Both message authentication codes and digital signature schemes are used to ensure the authenticity of transmitted message. However, there are important advantages of digital signatures over MACs as follows:
 
 1. A qualitative advantage that digital signatures have as compared to MACs is that signatures are publicly verifiable.
 2. Digital signature schemes also provide the very important property of non repudiation. that means that once $\mathcal{S}$ signs a message he cannot later deny having done so. MACs simply cannot provide non-repudiation.

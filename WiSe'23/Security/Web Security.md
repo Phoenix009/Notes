@@ -1,4 +1,6 @@
 # SOP - Same Origin Policy
+consider the tuple (protocol, hostname, port#) for implementing constraints.
+
 In the earliest days of the Web there were no security considerations for JS. Any document could arbitrarily frame others and gain read/write access.
 
 Without any separation, the attacker could use the handle of the frame in JS to read the entire body of the cross origin resource.
@@ -27,7 +29,7 @@ Reflected Server Side XSS vulnerabilities occur when attacker controlled input i
 ### Preventing Server Side XSS Vulnerabilities:
 There are typically two ways in which XSS can be prevented:
 #### Input Sanitisation:
-- We refer to input sanitisation as measure that try to remove any potentially harmful strings when data is being set to the server.
+- We refer to input sanitisation as measure that try to remove any potentially harmful strings when data is being sent to the server.
 - Usually input sanitising can be applied in two ways:
 	- Allow listing: good for security
 	- block listing: Meh!

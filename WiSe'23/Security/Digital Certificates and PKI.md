@@ -2,7 +2,7 @@
 
 One of the primary applications of digital signatures includes the secure distribution of public keys.
 
-Te key notion here is a digital certificate, which is simply a signature binding an entity to a public key. 
+The key notion here is a digital certificate, which is simply a signature binding an entity to a public key. 
 
 To be concrete, a party Charlie has generated a key pair $(pk_C, sk_C)$ for a secure digital signature scheme. Another party Bob also has generated a key pair $(pk_B, sk_B)$. Charlie knows that $pk_B$ is Bobs public key Then Charlie can compute the signature
 $$
@@ -68,10 +68,10 @@ There are cases where we may want to invalidate the previously issued certificat
 - One method for preventing certificates from being used indefinitely is to include an expiry date as part of the certificate.
 - Using expiry dates provides a very coarse grained solution to the problems mentioned earlier.
 ## Revocation:
-- One possibility is for the CA to include a serial number in every ceritificate it issues
+- One possibility is for the CA to include a serial number in every certificate it issues
 - Each certificate should have a unique serial number and the CA will store the mapping from serial number to the certificates
 - When a certificate is to be revoked the Ca can then search the serial number and revoke the certificate.
-- At the end of the day, the CA will then generatea **certificate revocation list - CRL** with the serial numbers of all revoked certificates. The CRL is then made available to verifiers.
+- At the end of the day, the CA will then generate **certificate revocation list - CRL** with the serial numbers of all revoked certificates. The CRL is then made available to verifiers.
 - Verification of certificates then involves checking the signature in the certificate and verifying the CA's signature on the revocation itself.
 
 
@@ -88,7 +88,7 @@ Rogue CA's can issue certificates to existing domains allowing phishing attacks 
 | `<flag> issuewild "letsencrypt.org"` | Allow lets encrypt to issue wildcard certificates |
 | `<flag> issue ";"` | no certificates may be issues |
 | `<flag> iodef "mailto:admin@domain.com"` | where to send notifications about violated policies |
-CAA should be followed by anyCA, but cannot be really enforced. Ex: How do you know a certificate was issued by any CA for a given domain?
+CAA should be followed by any CA, but cannot be really enforced. Ex: How do you know a certificate was issued by any CA for a given domain?
 
 ## DNS based Authentication of Named Entities - DANE:
 - Replaces the reliance on CAs with the reliance on DNS.

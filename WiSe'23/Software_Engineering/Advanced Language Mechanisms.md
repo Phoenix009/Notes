@@ -27,10 +27,10 @@ A class that plays multiple roles defines multiple sets of functionalities assoc
 
 ==Composing collaboration is, in effect, superimposing them by lining up classes according to the roles they play.==
 
-## Feature Models:
-In feature oriented programming, each collaboration maps to a feature and is called a feature model.
+## Feature Modules:
+In feature oriented programming, each collaboration maps to a feature and is called a feature module.
 
-A feature model refines the content of a base program (which itself may result from a composition of feature models) either by adding new elements or modifying and extending existing elements.
+A feature module refines the content of a base program (which itself may result from a composition of feature models) either by adding new elements or modifying and extending existing elements.
 
 The order in which features are applied is important: earlier features in the sequence may add elements that are refined by later features.
 

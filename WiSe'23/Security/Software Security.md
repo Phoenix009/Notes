@@ -190,7 +190,7 @@ In this table are the least signifiant bits accessed or most significant bits ac
 
 **Definition**:
 - A condition at an interface under which more input can be placed into a buffer or data holding area than the capacity allocated, overwriting other information.
-- Attackers can exploit such condition to crash a system or to insert a specially crafter code that allows them to gain control of the system.
+- Attackers can exploit such condition to crash a system or to insert a specially crafted code that allows them to gain control of the system.
 
 - Occurs when a process attempts to store data beyond the limits of a fixed-size buffer and consequently overwrite adjacent memory locations.
 - These locations could hold other program variables or parameters of program control flow data such as return addresses. 

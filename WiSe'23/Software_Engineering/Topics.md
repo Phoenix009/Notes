@@ -5,3 +5,6 @@
 5. [[Advanced Language Mechanisms]]
 6. [[Analysis]]
 7. [[Non-Functional Properties]]
+8. [[Theory Part]]
+9. [[Checklist]]
+10. 

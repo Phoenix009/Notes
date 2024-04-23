@@ -16,7 +16,7 @@ A ==release== is a selected revision of the software that is given a specific na
 > - A *revision* describes ordered variations over time; 
 > - a *release* is a specifically named revision;
 > - a *variant* describes intentional variations that exist in parallel.
-> - Versions encompass both revision and variants
+> - *Versions* encompass both revision and variants
 
 ### customer-branch:
 - Developers familiar with branching often use it to build customer-specific variants. 
@@ -35,6 +35,17 @@ the drawbacks are as follows:
 - Although language-specific merge mechanisms exist merging is usually performed in a text-based fashion, oblivious to the meaning of the merged artefacts
 
 ## Discussion:
+
+| Criteria               | Comment                                                               |
+| ---------------------- | --------------------------------------------------------------------- |
+| Preplanning Effort     | LOW                                                                   |
+| Feature Tracability    | non trivial                                                           |
+| Separation of Concerns | Crosscutting features can be implemented in a straight forward manner |
+| Information Hiding     | Low. As variability code cross cuts the feature code.                 |
+| Granularity            | Can be applied at variable granularity levels                         |
+| Uniformity             | can be used for both code and non code artefacts                      |
+
+
 ## Strong Points:
 - Well known, established and mature tools
 - Arbitrary compile time customisation independent of granularity and cross cutting
@@ -88,6 +99,16 @@ Disciplined annotations can be mapped to elements of the documents abstract synt
 The notion of disciplined annotations can help developers to avoid complex ad hoc implementations that might be hard to maintain. We argue that disciplined annotations are usually also easier to read and maintain.
 
 ## Discussion:
+
+| Criteria               | Comment                                                |
+| ---------------------- | ------------------------------------------------------ |
+| Preplanning Effort     | LOW                                                    |
+| Feature Tracability    | usually easy to trace features to their implementation |
+| Separation of Concerns | Out of the window :p                                   |
+| Information Hiding     | Out of the window :p                                   |
+| Granularity            | Can be applied at variable granularity levels          |
+| Uniformity             | can be used for both code and non code artefacts       |
+
 ### Strong Points:
 - Easy to use
 - Simple programming model
@@ -99,3 +120,4 @@ The notion of disciplined annotations can help developers to avoid complex ad ho
 - No support for information hiding
 - Prone to simple errors
 - Difficult to analyse and to write tool support for the underlying language.
+

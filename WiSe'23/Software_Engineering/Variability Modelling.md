@@ -2,6 +2,7 @@
 
 - A **software product line** offers a number of ==features== that a stake holder can select to create a ==tailor-made software product==
 
+
 **What is a feature?**
 - Key abstraction of the application domain
 - Fulfils one or more requirements
@@ -19,10 +20,10 @@
 
 **Function Representations:**
 
-| | | |
-|-|-|-|
-|$V: F \rightarrow \{0, 1\}$| Provides a mapping of features to selected or deselected|$\{(a, 0), (b, 1)\}$|
-|$\chi: V \rightarrow S$| $\chi(v) = \{f \mid v(f) = 1\}$ Gives a set of features that are selected|$\{b\}$|
+|                             |                                                                           |                      |
+| --------------------------- | ------------------------------------------------------------------------- | -------------------- |
+| $V: F \rightarrow \{0, 1\}$ | Provides a mapping of features to selected or deselected                  | $\{(a, 0), (b, 1)\}$ |
+| $\chi: V \rightarrow S$     | $\chi(v) = \{f \mid v(f) = 1\}$ Gives a set of features that are selected | $\{b\}$              |
 
 **Domain Engineering:**
 Is the activity of collecting, organising and storing past experiences in building systems in a ==particular domain== in the form of reusable assets as well as ==providing an adequate means for reusing== these assets when building new systems
@@ -30,46 +31,45 @@ Is the activity of collecting, organising and storing past experiences in buildi
 
 ![[domain_and_application_engg.jpg]]
 
-## Feature Modelling:
-- A feature model describes the features of a system and the dependencies among them.
+# Feature Modelling:
+- ==A feature model describes the features of a system and the dependencies among them.==
 - Two Representations:
 	- Propositional Formulas: Formal and machine readable
 	- Feature Diagrams: informal and human readable
 
-### Feature models as Propositional Formulas
+## Feature models as Propositional Formulas
 - Boolean variable per feature
 - Formula ($\Phi$) defines feature model
-- Formula evaluates to true iff the feature selection is valid.
+- ==Formula evaluates to true iff the feature selection is valid.==
 
 Example:
-- Features: Win, Unix, Txn, Read, Write
+- Features: `Win`, `Unix`, `Txn`, `Read`, `Write`
 - Constraints:
-	- Either Win or Unix must be selected
-	- if Txn is selected then Write must also be selected
+	- Either `Win` or `Unix` must be selected
+	- if `Txn` is selected then `Write` must also be selected
 
 $$F = \{ \text{Win}, \text{Unix}, \text{Txn}, \text{Read}, \text{Write} \}$$
 $$ \Phi = (\text{Win} \oplus \text{Unix}) \wedge (\text{Txn} \Rightarrow \text{Write}) $$
 Basic Definitions:
 
-| | | |
-|-|-|-|
-|$F$| Set of Features|$\{a, b\}$|
-|$S = \mathscr{P}(F)$| Set of all possible feature selections|$\{\{\}, \{a\}, \{b\}, \{a, b\}\}$|
-|$\Phi \in \mathbb{B}_F$| Boolean formula over $F$| $a \Rightarrow b$|
-|$C$|System Variants/valid feature selections|$\{\{\}, \{b\}, \{a, b\}\}$|
+|                         |                                          |                                    |
+| ----------------------- | ---------------------------------------- | ---------------------------------- |
+| $F$                     | Set of Features                          | $\{a, b\}$                         |
+| $S = \mathscr{P}(F)$    | Set of all possible feature selections   | $\{\{\}, \{a\}, \{b\}, \{a, b\}\}$ |
+| $\Phi \in \mathbb{B}_F$ | Boolean formula over $F$                 | $a \Rightarrow b$                  |
+| $C$                     | System Variants/valid feature selections | $\{\{\}, \{b\}, \{a, b\}\}$        |
 
 
-### Feature models as Feature Diagrams:
+## Feature models as Feature Diagrams:
 Abstract Syntax:
 	!TODO
 
-#### From Feature Diagrams to Propositional Formulas
+### From Feature Diagrams to Propositional Formulas
 
 
 
-### Feature Model Analysis:
+## Feature Model Analysis:
 - Is a feature selection valid?
 - **Model Consistency**: Is there at least one valid feature selection?
 - **Selectable and De-selectable Features**: Is a given feature selectable given a prior configuration?
 - **Dead, Mortal and Immortal Features**: Which features must, must not and maybe selected?
-

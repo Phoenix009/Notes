@@ -36,6 +36,6 @@ When 10 hosts are connected to a ToR using 1Gbps link each thus aggregate bandwi
 Ratio of worst case aggregation bandwidth among end hosts to the total bisection bandwidth
 
 **ECMP**
-ECMP requires having multiple paths available between a source and a destination. These paths typically have the same routing cost, achieved either through equal-cost links or using techniques like link cost adjustment. ^314925
+ECMP requires having multiple paths available between a source and a destination. These paths typically have the same routing cost, achieved either through equal-cost links or using techniques like link cost adjustment.
 
 When a packet arrives at a router or switch, ECMP uses a hashing mechanism to determine which path the packet should take. The hashing algorithm often uses information from the packet header, such as source and destination IP addresses, to create a unique identifier. This identifier is then mapped to one of the available paths.

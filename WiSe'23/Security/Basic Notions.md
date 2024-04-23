@@ -1,28 +1,34 @@
 # Basic Components:
+
+
+## Computer Security:
+Measures and controls that ensure the confidentiality, integrity and availability of computer resources including the software, hardware, firmware and information being processed, stored and communicated.
+
+
 ## 1. Confidentiality:
 Confidentiality is the concealment of information or resources. The need for keeping information secret arises from the use of computers in institutions with sensitive information such as government and industry.
 
 ## 2. Integrity:
-Integrity refers to the trustworthiness of data or resources, and it is usually phrased in terms of preventing improper or unauthorized change.
+Integrity refers to the trustworthiness of data or resources, and it is usually phrased in terms of preventing improper or unauthorised change.
 
 Integrity includes **data integrity** (the content of the information) and **origin integrity** (the source of the data, often called authentication).
 
 Integrity mechanisms fall into two classes: **prevention** mechanisms and **detection** mechanisms.
 
-Prevention mechanisms seek to maintain the integrity of the data by blocking any unauthorized attempts to change the data or any attempts to change the data in unauthorized ways.
+Prevention mechanisms seek to maintain the integrity of the data by blocking any unauthorised attempts to change the data or any attempts to change the data in unauthorised ways.
 
 Detection mechanisms do not try to prevent violations of integrity; they simply report that the data’s integrity is no longer trustworthy.
 
 ## 3. Availability:
 Availability refers to the ability to use information or resources. Availability is an important aspect of reliability as well as of system design because an unavailable system is at least as bad as no system at all.
 
-System designs usually assume a statistical model to analyze expected patterns of use, and mechanisms ensure availability when that statistical model holds. Someone may be able to manipulate use (or parameters that control use, such as network traffic) so that the assumptions of the statistical model are no longer valid. 
+System designs usually assume a statistical model to analyse expected patterns of use, and mechanisms ensure availability when that statistical model holds. Someone may be able to manipulate use (or parameters that control use, such as network traffic) so that the assumptions of the statistical model are no longer valid. 
 
 This means that the mechanisms for keeping the resource or data available are working in an environment for which they were not designed. As a result, they will often fail.
 
 ## Additional Goals:
 1. **Accountability**: Undeniably trace back actions to unique entity
-2. **Authenticity**: property of being genuine and begin able to be verified and trusted
+2. **Authenticity**: property of being genuine and being able to be verified and trusted
 3. **Non-Repudiation**: inability to dispute that a certain action was take by an entity
 4. **Anonymity**: remaining unidentified for certain actions
 5. **Un-linkability**: inability to link two entities who are in fact the same
@@ -43,17 +49,17 @@ the three security services - confidentiality, integrity and availability counte
 Attacks can be divided into four broad classes:
 1. **disclosure**: unauthorised access to resources
 2. **deception**: acceptance of false data
-3. **disruption**: interruption or prevention of correction operation
+3. **disruption**: interruption or prevention of correct operation
 4. **usurpation**: unauthorised control of some part of the system
 
 ## Policy and Mechanism:
 A **security policy** is a statement of what is and what is not allowed.
 
-Policy consists of a set of axioms that the policy makers believer can be enforced. Designers of policies always make two assumptions. 
+Policy consists of a set of axioms that the policy makers believe can be enforced. Designers of policies always make two assumptions. 
 1. The policy correctly and unambiguously partitions the set of system states into secure and insecure states
 2. The security mechanisms prevent the system from entering insecure state
 
-If either of the above two assumptions is erroneous the system with be insecure.
+If either of the above two assumptions is erroneous the system will be insecure.
 
 
 A **security mechanism** is a method, tool or procedure for enforcing a security policy.

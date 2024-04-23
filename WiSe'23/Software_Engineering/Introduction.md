@@ -6,6 +6,8 @@
 
 The desire for variable software is driven by the typically broad and diverse spectrum of requirements of the stakeholders of a product line, manifested in features they want in a product.
 
+---
+
 ## Binding Time:
 When we derive a product, we decide which features will be included in the product. We also say that we bind a decision.
 
@@ -27,7 +29,7 @@ Different implementation techniques allow binding decisions at different times. 
 - Ex:
 	- [[Runtime Variability#1. Runtime Parameters|Runtime Parameters]]
 
-
+---
 
 ## Technology: Language Based Vs Tool Based:
 ### Language Based Approach:
@@ -36,7 +38,7 @@ A language based approach uses the mechanisms provided by a host programming lan
 ### Tool Based Approach:
 Uses one or more external tools to implement or represent features in code and to control the product derivation process.
 
-
+---
 
 ## Representation: Annotation Vs Composition
 A major goal of feature oriented product line engineering is to derive a product automatically from variable code, based on users feature selection.
@@ -52,15 +54,25 @@ We concentrate on two approaches that are widely used in practice: annotation ba
 - During product derivation, all units of all selected features and valid feature combinations are composed to form the final product.
 
 
-
-
+---
 
 
 # Quality Criteria:
+To assess tradeoffs and compare implementation strategies, we introduce and discuss six quality criterias that product line implementation techniques should ideally meet:
+
+| Criteria               | Comment |
+| ---------------------- | ------- |
+| Preplanning Effort     | LOW     |
+| Feature Tracability    | YES     |
+| Separation of Concerns | YES     |
+| Information Hiding     | YES     |
+| Granularity            | YES     |
+| Uniformity             | YES     |
+
 ## Preplanning Effort:
-- The key goal of preplanning is to east the anticipation of changes and sources of variability and reuse.
+- The key goal of preplanning is to ease the anticipation of changes and sources of variability and reuse.
 - Instead of developing individual software systems, product developers analyse an entire domain and anticipate potential requirements in terms of features.
-- Ideally a product line implementation technique minimises the necessary preplanning effort and even allows implementing features that were not planned upfront with low effort.
+- ==Ideally a product line implementation technique minimises the necessary preplanning effort and even allows implementing features that were not planned upfront with low effort.==
 ## Feature Traceability:
 - Is the ability to trace a feature from the problem space (ex. Feature Model) to the solution space (ex. Actual Implementation).
 
@@ -89,3 +101,4 @@ We concentrate on two approaches that are widely used in practice: annotation ba
 - Conceptually, all artefacts should be encoded and synthesised in a similar manner.
 - Ideally, an implementation technique should be applicable, in principle and in practice to a wide variety of different code and non code artefacts.
 
+---

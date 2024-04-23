@@ -708,8 +708,3 @@ Assuming the Live Forensics has captured the live image and has the hash of the 
 
 
 
-
-
-
-
-

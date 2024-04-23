@@ -1,0 +1,16 @@
+1. [[Service Requirements]]
+2. [[Service Launch Fundamentals]]
+3. [[Service Launch Devops]]
+4. [[Service Conversions]]
+5. [[Workstations]]
+6. [[Server Hardware]]
+7. [[Services]]
+8. [[Networking]]
+9. [[Datacenter]]
+10. [[Monitoring]]
+11. [[Namespaces]]
+12. [[Email Service]]
+13. [[Ethics]]
+14. [[In the organisation]]
+
+black box and white box model 

@@ -2,6 +2,8 @@
 
 How can the parties share a secret key in the first place?
 
+[[Merkles Puzzle]]
+
 To summarise there are at least three distinct problems related to the use of private key encryption:
 1. key distribution
 2. storing and maintaining large number of secret keys

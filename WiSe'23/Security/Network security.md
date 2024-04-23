@@ -48,7 +48,7 @@ In summary DNS caches are highly valuable targets:
 
 # DNSSEC - DNS Security Extensions
 
-- DNSSEc follows multiple goals:
+- DNSSEC follows multiple goals:
 	- Data Integrity
 	- Origin authentication
 	- Authenticated denial of existence
@@ -176,7 +176,7 @@ Idea: Use PKI to authorise some AS to announce some prefix
 # Stateful Inspection Firewalls:
 - Stateful firewalls record TCP/UDP connections
 	- Maintain a directory of TCP/UDP connections
-	- Specify rules based on packers and or connections
+	- Specify rules based on packets and or connections
 
 - Connection tracking allows for easier rules
 	- Delete connections if they are closed

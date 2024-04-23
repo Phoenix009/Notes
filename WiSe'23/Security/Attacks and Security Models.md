@@ -46,7 +46,7 @@ adversary records a communication session and replays the entire or partial sess
 Adversary assumes the identity of one of the legitimate parties in a network
 
 ## 4. dictionary:
-Usually an attack against passwords, A password is stored. Typically passwords are stored as hashed values. When a user logs on and enters a password, it is hashed and checked against the stored hash.
+Usually an attack against passwords. Typically passwords are stored as hashed values. When a user logs on and enters a password, it is hashed and checked against the stored hash.
 
 Adversary can take a list of all probable passwords hash them and try to match the hashes hoping to finding a match.
 
@@ -62,7 +62,7 @@ this type of attack usually involves some form of impersonation in an authentica
 The security of cryptographic primitives and protocols can be evaluated under several different models. 
 
 ## 1. Unconditional security
-Unconditional security for for encryption systems is called perfect secrecy.
+Unconditional security for encryption systems is called perfect secrecy.
 
 For perfect secrecy, the uncertainty in the plaintext, after observing the cipher text must be equal to the priori uncertainty about the plain text.
 $$\text{Pr}[M=n \mid C=c] = \text{Pr}[M=m]$$

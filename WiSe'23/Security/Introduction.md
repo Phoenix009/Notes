@@ -8,7 +8,7 @@ Reference Book: https://elibrary.pearson.de/book/view/99.150005/9781292220635?
 | ==4== | https://youtu.be/VU6s7udey60 | Assymmetric Cryptography |  |
 | ==5== | https://youtu.be/foQxLmVl_eU | Crypto Protocols |  |
 | ==6.1== | https://youtu.be/kEJhZj9A75U | TLS PKI and Certificates 1 |  |
-| 6.2 | https://youtu.be/mFy0E2FzVrk | TLS PKI and Certificates 2 |  |
+| ==6.2== | https://youtu.be/mFy0E2FzVrk | TLS PKI and Certificates 2 |  |
 | 7 | https://dl.cispa.de/s/MiTK7TTasAPBk8D | Distributed Systems |  |
 | 8 | https://dl.cispa.de/s/BYPw3WHePrHan3n | Anonymity and Privacy |  |
 | 9 | https://dl.cispa.de/s/bJNEbFATP4Sexxc | ML Security |  |

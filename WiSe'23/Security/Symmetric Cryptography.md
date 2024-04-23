@@ -43,10 +43,11 @@ The cipher method must not be required to be secret, and it must be able to fall
 
 
 # Perfect secrecy:
-For a scheme to be perfectly secret, observing the cipher text $c$ should have no effect on the adversary’s knowledge regarding the actual message $m$ that was sent; 
+For a scheme to be perfectly secret, observing the cipher text 
+$c$ should have no effect on the adversary’s knowledge regarding the actual message $m$ that was sent; 
 
 $$\text{Pr}[M=m \mid C=c] = \text{Pr}[M=m]$$
-In other words, the a posteriori probability that some message $m$ was sent, conditioned on the cipher text $c$ that was observed, should be no different from the a priori probability that $m$ would be sent.
+In other words, the posteriori probability that some message $m$ was sent, conditioned on the cipher text $c$ that was observed, should be no different from the a priori probability that $m$ would be sent.
 
 This formulation requires that the probability distribution of the cipher text does not depend on the plaintext.
 
@@ -98,7 +99,7 @@ Computational security incorporates two relaxations:
 
 
 ## CPA - Chosen plain text attacks
-![[Crypto-protocols#3. Chosen plaintext attack]]
+![[Attacks and Security Models#3. Chosen plaintext attack]]
 
 ## CPA Secure Encryption from Pseudorandom Functions
 - A naive attempt at constructing a secure encryption scheme from a pseudorandom permutation is to define $$Enc_k(m) = F_k(m)$$

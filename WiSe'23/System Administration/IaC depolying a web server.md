@@ -1,0 +1,6 @@
+- [ ] Create a VM
+- [ ] add a dns record for the new VM
+- [ ] installing OS 
+- [ ] certbot
+- [ ] screen similar to tmux
+- [ ]  chrome

@@ -38,8 +38,10 @@ Let $F$ be a pseudorandom function.
 
 ### Basic Construction:
 
->[!danger]
+>[!danger] Insecure Construction Ahead
+>
 >This basic scheme is not secure in the general case when messages of different lengths may be authenticated
+>Please refer [here](https://blog.cryptographyengineering.com/2013/02/15/why-i-hate-cbc-mac/) to understand why this scheme is not secure. 
 > 
 
 Let $F$ be a pseudorandom function and a fix length function $n \gt 0$
@@ -63,7 +65,7 @@ There are two ways the above construction can be modified. Here we will discuss 
 # Hash Functions
 - Hash functions are simply functions that take inputs of some length and compress then into short fixed-length outputs
 - A good hash function is the one that yields few collisions, where a collision is a pair of distinct items $x$ and $x^\prime$ such that $H(x) = H(x^\prime)$
-- Collision-resistant hash functions are similar in spirit. The goal is to avoid collisions. However there are fundamental differences. For one, the desire to minimise collisions in the setting of data structures becomes in a requirement in the setting of cryptography.
+- Collision-resistant hash functions are similar in spirit. The goal is to avoid collisions. However there are fundamental differences. For one, the desire to minimise collisions in the setting of data structures becomes a requirement in the setting of cryptography.
 
 ## Collisions resistance
 A function is collision resistant if it is infeasible for any probabilistic polynomial time algorithm to find a collision in $H$.
@@ -76,7 +78,7 @@ There are at least one differences between the keys in this context and what we 
 
 ## Unkeyed Hash Functions
 
-Cryptographic hash functions used in practice generally have a fixed output length and are usually unkeyed meaning that the has function is just a fixed function
+Cryptographic hash functions used in practice generally have a fixed output length and are usually unkeyed meaning that the hash function is just a fixed function
 $$H:\{0, 1\}^* \rightarrow \{0, 1\}^l$$
 
 

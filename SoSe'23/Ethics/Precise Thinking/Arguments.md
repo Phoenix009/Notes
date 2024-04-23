@@ -16,7 +16,7 @@ A collection of statements of which at least one functions as a ==conclusion== a
 
 2. Others Argument?
 	- Depends on the context
-	- Usually the first step when you try yo work out an argument is to identify the conclusion
+	- Usually the first step when you try to work out an argument is to identify the conclusion
 	- Premises are harder to find than conclusions and requires both close and charitable reading
 
 

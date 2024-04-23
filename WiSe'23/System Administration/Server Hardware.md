@@ -1,0 +1,3 @@
+- GFS, Hadoop for backups?
+- Stabiliser and UPS
+- Relation between number of cores and clock frequency and threading

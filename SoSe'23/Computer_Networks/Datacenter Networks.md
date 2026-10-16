@@ -23,7 +23,7 @@ The network is divided into three main layers: the access layer, the aggregation
 **Properties of Fat Tree Layout**:
 - Multiple routes to the core. Once a core is chosen, path to the host is fixed.
 - Multiple paths for data traffic, which helps in load balancing and fault tolerance
-- Load balancing traffic from hosts. [ECMP](%5E314925.md) - Equal cost multi-path routing 
+- Load balancing traffic from hosts. ECMP - Equal cost multi-path routing 
 
 **Bisection Bandwidth**:
 Sum of the bandwidths of the minimal number of links cut to create the bisection.

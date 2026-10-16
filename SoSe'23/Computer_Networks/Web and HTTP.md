@@ -1,4 +1,7 @@
-
+---
+title: "Web and HTTP"
+weight: 2
+---
 HTTP is implemented in two programs: a client program and a server program. The client and server program running on two different hosts exchange HTTP messages. HTTP defines the structure of these messages and how the client and server exchanges the messages.
 
 HTTP defines how web clients requests web pages from web servers and how servers transfers the web pages to clients.

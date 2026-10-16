@@ -1,3 +1,7 @@
+---
+title: "Probability and Information theory"
+weight: 3
+---
 # Frequentist Probability and Bayesian Probability:
 
 When we say that an outcome has a probability $p$ of occuring, it means that if we repeated the experiment infinitely many times, then the proportion $p$ of the repetitions would result in that outcome.

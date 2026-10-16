@@ -1,4 +1,7 @@
-
+---
+title: "Network Layer"
+weight: 11
+---
 ### Forwarding and Routing
 
 The role of the network layer is simple - To move packets from a sending host to a receiving host.
@@ -67,7 +70,7 @@ Networks that provide only a connectionless service at the network layer are cal
 
 #### Virtual-Circuit (VC) Networks:
 
-![[virtual_circuits.png]]
+![virtual_circuits](images/virtual_circuits.png)
 Virtual circuit Networks use connections at the network layer. These connections are called virtual circuits (VCs).
 
 A VC consists of
@@ -115,7 +118,7 @@ Because forwarding tables in datagram networks can be modified at any time, a se
 
 ##### Whats Inside a Router?
 
-![[router.png]]
+![router](images/router.png)
 
 1. **Input Port**:
     The lookup function is performed at the input port. This will occur in the rightmost box of the input port. Here the forwarding table is consulted to determine the router output port to which an arriving packet will be forwarding via the switching fabric.
@@ -148,7 +151,7 @@ Contents:
 - Cost/Metric for hop
 - Next hop gateway or end-system
 
-### [[Internet Protocol IP]]
-### [[Routing Algorithms]]
+### [Internet Protocol IP](Internet%20Protocol%20IP.md)
+### [Routing Algorithms](Routing%20Algorithms.md)
 
 

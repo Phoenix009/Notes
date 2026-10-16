@@ -1,3 +1,7 @@
+---
+title: "Federated Learning"
+weight: 19
+---
 We propose an alternative that leaves the training data distributed on the mobile devices, and learns a shared model by aggregating locally-computed updates. We term this decentralised approach ==Federated Learning==.
 
 ## Introduction:

@@ -1,3 +1,7 @@
+---
+title: "PAXOS"
+weight: 13
+---
 ### Problem:
 A collection of processes that can propose values. Consensus ensures that a single one among the proposed value is chosen. 
 

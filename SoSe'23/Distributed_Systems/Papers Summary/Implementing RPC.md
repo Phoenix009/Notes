@@ -1,4 +1,6 @@
-
+---
+title: "Implementing RPC"
+---
 ## Introduction:
 Remote Procedure Calls is based on the observation that procedure calls are a well-known and well-understood mechanism for transfer of control within a program running on a single computer.
 
@@ -35,7 +37,7 @@ Violation of this principle seemed likely to lead us into complexities that have
 
 
 ## Structure:
-![[RPC-structure.svg]]
+![RPC-structure](images/RPC-structure.svg)
 
 When making remote calls, five pieces of program are involved: the `user`, the `user-stub`, the `RPCRuntime`, the `server-stub` and the `server`
 

@@ -1,9 +1,12 @@
-
+---
+title: "Principles of Reliable Data Transfer"
+weight: 8
+---
 ### 1. RDT 1.0: RDT over a perfectly reliable channel.
 
 We first consider the simplest case, in which the underlying channel is completely reliable.
 
-![[rdt1.0.png]]
+![rdt1.0](images/rdt1.0.png)
 
 All packet flow is from sender to receiver, with a perfectly reliable channel there is no need for the receiver side to provide any feedback to the sender since nothing can go wrong.
 
@@ -20,7 +23,7 @@ We will use positive and negative acknowledgements that will allow the receiver 
 
 Reliable data transfer protocol based on such retransmission are known as ARQ (Automatic Repeat Request).
 
-![[rdt2.0.png]]
+![rdt2.0](images/rdt2.0.png)
 
 
 Three additional protocol capabilities are required in ARQ protocols to handle the presence of bit errors:

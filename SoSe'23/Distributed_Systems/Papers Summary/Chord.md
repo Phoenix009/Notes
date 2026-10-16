@@ -1,3 +1,6 @@
+---
+title: "Chord"
+---
 ## Base Chord Protocol:
 Specifies:
 - How to find the location of keys

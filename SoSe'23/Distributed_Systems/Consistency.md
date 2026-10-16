@@ -1,3 +1,7 @@
+---
+title: "Consistency"
+weight: 3
+---
 Read: https://jepsen.io/consistency
 
 
@@ -16,11 +20,11 @@ A consistency model is a set of histories. We use consistency models to define w
 Set of rules that the system will enforce which defines how the system behaves when operating on the state.
 
 Consistency Models:
-1. [[Strict Consistency]]
-2. [[Sequential Consistency]]
-3. [[Release Consistency]]
-4. [[Causal Consistency]]
-5. [[Eventual Consistency]]
+1. [Strict Consistency](Strict%20Consistency.md)
+2. [Sequential Consistency](Sequential%20Consistency.md)
+3. [Release Consistency](Release%20Consistency.md)
+4. [Causal Consistency](Causal%20Consistency.md)
+5. [Eventual Consistency](Eventual%20Consistency.md)
 
 
 **Strict Consistency**:

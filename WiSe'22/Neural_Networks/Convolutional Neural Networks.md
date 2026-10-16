@@ -1,4 +1,7 @@
-
+---
+title: "Convolutional Neural Networks"
+weight: 9
+---
 The name “convolutional neural network” indicates that the network employs a mathematical operation called convolution. Convolution is a specialized kind of linear operation.
 
 Convolutional networks are simply neural networks that use convolution in place of general matrix multiplication in at least on of their layers.
@@ -63,7 +66,7 @@ Traditional neural network layers use matrix multiplication by a matrix of param
 
 Convolutional networks, however have sparse interactions. This is obtianed by making the kernel smaller than the input.
 
-![[sparse_interactions.png]]
+![sparse_interactions](images/sparse_interactions.png)
 
 
 In a deep convolutional network, units in the deeper layers may indirectly interact with a larger portion of the input. This allows the network to efficiently describe complicated interactions between many variables by constructing such interactions from simple building blocks.
@@ -129,22 +132,22 @@ First when we refer to convolution in the context of neural networks, we usually
 
 In a multilayer convolutional network, the input to the second layer is the output of the first layer, which usually has the output of many different convolutions at each position.
 
-![[convolution.png]]
+![convolution](images/convolution.png)
 
 
 We may want to skip over some positions of the kernel in order to reduce the computational cost. We can think of this as downsampling the output of the fill convolution function.
 
 If we want to sample only every $s$ pixels in each direction in the output, we can define a downsampled convolution function. We refer to $s$ as the stride of this downsampled convolution.
 
-![[downsampling.png]]
+![downsampling](images/downsampling.png)
 
 One essential feature of any convolutional network implementation is the ability to implicitly zero pad the input in order to make it wider. Without this feature the width of the representation shrinks.
 
-![[locally_connected.png]]
+![locally_connected](images/locally_connected.png)
 
 In some cases we do not actually want to use convolution but rather locally connected layers. This is sometimes also called unshared convolution, because it is a similar operation to discrete convolution with a small kernel but without sharing parameters across locations.
 
-![[tiled_convolution.png]]
+![tiled_convolution](images/tiled_convolution.png)
 
 Tiled convolution offers a compromise between a convolutional layer and a locally connected layer. Rather than learning a seperate set of weights every spatial location, we learn a set of kernels that we rotate through as we move through space.
 

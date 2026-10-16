@@ -1,3 +1,7 @@
+---
+title: "Number Theory Basics"
+weight: 3
+---
 # Primes and Divisibility
 
 - Set of integers is denoted as $\mathbb{Z}$

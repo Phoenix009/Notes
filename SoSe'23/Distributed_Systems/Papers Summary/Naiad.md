@@ -1,3 +1,6 @@
+---
+title: "Naiad"
+---
 - It offers the high throughput of batch processors, the low latency of stream processors, and the ability to perform iterative and incremental computations.
 - A new computational model, ==timely dataflow==, under- lies Naiad and captures opportunities for parallelism across a wide class of algorithms
 
@@ -122,7 +125,7 @@ Naiad projects each pointstamp $p$ from the physical graph to a pointstamp $\hat
 This projection leads to a loss of resolution, since there are cases where $p_1$ cannot-result-in $p_2$ but $\hat{p_1}$ could-result-in $\hat{p_2}$.
 
 ### Distributed Progress Tracking:
-We adapt the approach for progress tracking based on a single global frontier ([[#Achieving Timely DataFlow]]) to a distributed setting in which multiple workers coordinate independent sets of events using a local view of the global state. 
+We adapt the approach for progress tracking based on a single global frontier ([Achieving Timely DataFlow](#Achieving%20Timely%20DataFlow)) to a distributed setting in which multiple workers coordinate independent sets of events using a local view of the global state. 
 
 We base our initial protocol on broadcasting occurrence count updates, and then refine it with two optimisations.
 
@@ -131,7 +134,7 @@ For each pointstamp each worker maintains a
 - local `precursor_count`: computed from the `occurrence_count`
 - local `frontier`: defined using *could-result-in* relation on local active pointstamps
 
-Worker broadcasts (to all workers, including itself) progress updates, which are pairs $(p \in \text{Pointstamp}, \delta \in \mathbb{Z})$ with $\delta$ chosen according to the update rules from [[#Achieving Timely DataFlow]].
+Worker broadcasts (to all workers, including itself) progress updates, which are pairs $(p \in \text{Pointstamp}, \delta \in \mathbb{Z})$ with $\delta$ chosen according to the update rules from [Achieving Timely DataFlow](#Achieving%20Timely%20DataFlow).
 
 The broadcasts from a given worker to another must be delivered in FIFO order. When a worker receives a progress update $(p, \delta)$, it adds $\delta$ to the local occurrence count for $p$
 

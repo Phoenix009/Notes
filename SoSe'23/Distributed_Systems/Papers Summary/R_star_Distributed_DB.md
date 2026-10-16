@@ -1,3 +1,6 @@
+---
+title: "R_star_Distributed_DB"
+---
 - Paper deals with the transaction management aspect of the R* distributed database system.  
 - Concentrates primarily on description of commit protocols
 - PA - Presumed Abort and PC - Presumed commit are extensions of 2PC
@@ -36,7 +39,7 @@ Some of the desirable characteristics in a distributed deadlock detection:
 ## The 2 Phase Commit Protocol:
 The model of a distributed transaction execution is such that there is one process, called the **coordinator**, that is connected to the user application and a set of other processes, called the **subordinates**.
 
-![[2PC-model.svg]]
+![2PC-model](images/2PC-model.svg)
 ### 2P Normal Operation: /WO Failure
 
 #### I. First Phase:

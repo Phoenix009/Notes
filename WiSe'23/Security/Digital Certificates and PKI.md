@@ -1,3 +1,7 @@
+---
+title: "Digital Certificates and PKI"
+weight: 10
+---
 # Intuition
 
 One of the primary applications of digital signatures includes the secure distribution of public keys.
@@ -92,7 +96,7 @@ CAA should be followed by any CA, but cannot be really enforced. Ex: How do you 
 
 ## DNS based Authentication of Named Entities - DANE:
 - Replaces the reliance on CAs with the reliance on DNS.
-- Relies on [[Network security#DNSSEC - DNS Security Extensions|DNSSEC]] to sign DNS records
+- Relies on [DNSSEC](Network%20security.md#DNSSEC%20-%20DNS%20Security%20Extensions) to sign DNS records
 - DNS administrator makes an authoritative binding between the domain name and a certificate that a host at that domain name might use.
 - New DNS record type `TLSA` that can specify different usage models. Ex: a valid leaf certificate and its public key.
 - Client check the TLSA entry against the servers certificate during certificate verification.

@@ -1,4 +1,7 @@
-
+---
+title: "GFS - Google File System"
+weight: 10
+---
 ## Design Overview:
 
 ### Assumptions:
@@ -87,7 +90,7 @@ Checkpointing: This may also include application-level checksums. Readers only r
 ## System Interactions:
 We now describe how the client, master and chunk servers interact to implement data mutations, atomic record append and snapshot.
 
-![[GFS_Operation_Flow.png]]
+![GFS_Operation_Flow](images/GFS_Operation_Flow.png)
 
 ### Leases and Mutation Order:
 A ==mutation== is an operation that changes the contents or metadata of a chunk such as a write or an append operation. Each mutation is performed at all replicas.
@@ -96,7 +99,7 @@ The master grants a chunk lease to one of the replicas which we call the ==prima
 
 Thus, the global mutation order is defined first by the lease grant order chosen by the master, and within a lease by the serial numbers assigned by the primary.
 
-If a write by application is large or straddles a chunk boundary, GFS client code breaks it down into multiple write operations which may be interleaved with other concurrent writes. Therefore, the file region is consistent but undefined as mentioned in [[#Guarantees by GFS]] 
+If a write by application is large or straddles a chunk boundary, GFS client code breaks it down into multiple write operations which may be interleaved with other concurrent writes. Therefore, the file region is consistent but undefined as mentioned in [Guarantees by GFS](#Guarantees%20by%20GFS) 
 
 ### Data Flow:
 We ==decouple the flow of data from flow of control== to use the network efficiently. While control flows from the client to the primary and then to all secondaries, data is pushed linearly along a carefully picked chain of chunk servers.

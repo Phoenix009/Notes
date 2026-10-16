@@ -1,3 +1,7 @@
+---
+title: "Causal Consistency"
+weight: 7
+---
 Sequential consistency and Release Consistency can totally order all operations but need some central coordination. eg: with locks
 
 This does not work with network partitioning, what is the node holding the lock dies?
@@ -11,4 +15,4 @@ Using vector timestamp enforces causal consistency.
 A sync of two causally unrelated nodes always results in a conflict. 
 
 
-Read: [[File Synchronization with Vector Time Pairs]]
+Read: [File Synchronization with Vector Time Pairs](Papers%20Summary/File%20Synchronization%20with%20Vector%20Time%20Pairs.md)

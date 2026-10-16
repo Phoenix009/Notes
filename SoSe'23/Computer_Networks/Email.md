@@ -1,3 +1,7 @@
+---
+title: "Email"
+weight: 4
+---
 It has three major components:
 1. User Agent
 	Allows users to read, reply, forward and compose messages.

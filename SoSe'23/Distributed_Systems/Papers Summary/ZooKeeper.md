@@ -1,3 +1,7 @@
+---
+title: "ZooKeeper"
+weight: 14
+---
 - ZooKeeper, a service for coordinating processes of distributed applications.
 - The ZooKeeper interface enables a high-performance service implementation. 
 - In addition to the wait-free property, ZooKeeper provides a per client guarantee of FIFO execution of requests and linearisability for all requests that change the ZooKeeper state.
@@ -142,7 +146,7 @@ delete(n)
 
 
 ## ZooKeeper Implementation:
-![[ZooKeeper-Service.svg]]
+![ZooKeeper-Service](images/ZooKeeper-Service.svg)
 Upon receiving a request:
 - a server prepares it for execution (re- quest processor). 
 - If such a request requires coordination among the servers (write requests), then they use an agreement protocol (an implementation of atomic broad- cast), and 

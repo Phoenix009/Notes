@@ -1,3 +1,7 @@
+---
+title: "Introduction"
+weight: 1
+---
 # Parametric Methods:
 
 The model based approach that reduces the problem of estimating $f$ to one of estimating a set of parameters. This approach is referred as parametric.

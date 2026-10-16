@@ -1,4 +1,6 @@
-
+---
+title: "TreadMarks"
+---
 ### Introduction:
 TreadMarks is a distributed shared memory system for standard unix systems. TreadMarks goes to great lengths to reduce the amount of communication performed to maintain memory consistency. 
 
@@ -14,10 +16,10 @@ TreadMarks implementation relies on user-level memory management techniques. Use
 
 
 ### Design:
-#### [[Release Consistency]]:
+#### [Release Consistency](../Release%20Consistency.md):
 Permits a processor to delay making its changes to shared data visible to other processors until certain synchronization access occur.
 
-#### [[Release Consistency#Lazy Release Consistency - Lazy Update Propagation:|Lazy Release Consistency]]:
+#### [Lazy Release Consistency](../Release%20Consistency.md#Lazy%20Release%20Consistency%20-%20Lazy%20Update%20Propagation%3A):
 In LRC the propagation of modifications is postponed until the time of the ==acquire==.
 
 The pulling of the updates is transitive, when pulling the updates from the previous owner, all the updates that the previous owner has seen, have to be pulled.

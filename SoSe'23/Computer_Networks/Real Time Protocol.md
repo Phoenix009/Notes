@@ -1,3 +1,7 @@
+---
+title: "Real Time Protocol"
+weight: 26
+---
 RTP runs in end-systems. 
 
 ### RTP QoS:
@@ -18,7 +22,7 @@ RTP runs in end-systems.
 - Header also contains sequence number and time stamps
 
 ### RTP Header:
-![[RTP-header.svg]]
+![RTP-header](images/RTP-header.svg)
 1. Payload Type (7b):
 	- Indicates type of encoding currently being used. If sender changes encoding during call, sender informs receiver via payload-type field
 2. Sequence # (16b):

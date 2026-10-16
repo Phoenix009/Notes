@@ -1,3 +1,7 @@
+---
+title: "Intermediate Representation"
+weight: 4
+---
 ### Control Flow Graphs:
 
 Each instruction in a function has a set of possible successor instruction in that function

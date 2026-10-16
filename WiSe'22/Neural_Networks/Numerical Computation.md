@@ -1,4 +1,7 @@
-
+---
+title: "Numerical Computation"
+weight: 4
+---
 Machine Learning algorithms usually require a high amount of numerical computation. Common operations include optimization and solving systems of linear equations. 
 
 Evaluating mathematical functions on a digital computer can be difficult when function involves real numbers, which cannot be precisely represented.
@@ -97,7 +100,7 @@ We are sometimes interested in a derivative of a derivative. This is known as se
 
 The second derivative is important as it tells us whether a gradient step will cause as much of an improvement as we would expect based on the gradient alone.
 
-![[gradients.png]]
+![gradients](images/gradients.png)
 
 If a function has gradient equal to $1$  and if the second derivative
 

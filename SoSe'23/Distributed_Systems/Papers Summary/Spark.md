@@ -1,3 +1,6 @@
+---
+title: "Spark"
+---
 - Resilient Distributed Datasets (RDDs), a distributed memory abstraction that lets programmers perform in-memory computations on large clusters in a fault-tolerant manner.
 
 

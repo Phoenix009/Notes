@@ -1,4 +1,7 @@
-
+---
+title: "Optimization"
+weight: 8
+---
 # Challenges in Neural Network Optimizations:
 
 ## 1. Ill conditioning of the Hessian $H$: 

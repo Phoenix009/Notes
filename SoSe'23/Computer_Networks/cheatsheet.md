@@ -1,3 +1,6 @@
+---
+title: "cheatsheet"
+---
 #### Application Layer:
 
 |Type|Name|Value|
@@ -33,7 +36,7 @@
 	- $\texttt{Timeout} = \texttt{EstimatedRTT} + 4 * \texttt{DevRTT}$
 
 - **Congestion control**
-	![[tcp_congestion_control.png]]
+	![tcp_congestion_control](images/tcp_congestion_control.png)
 
 
 #### Network Layer
@@ -89,7 +92,7 @@
 
 
 Steps in adding an outside-AS destination in a router’s for- warding table, Pg410
-Add flowchart for determining the best path for BGP [[Routing Algorithms#BGP Route Selection|BGP Route Selection]]
+Add flowchart for determining the best path for BGP [BGP Route Selection](Routing%20Algorithms.md#BGP%20Route%20Selection)
 
 | | Own routes| Customers routes| Siblings routes | Providers Routes | Peers routes|
 |--|--|--|--|--|--|

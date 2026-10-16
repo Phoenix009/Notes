@@ -1,3 +1,7 @@
+---
+title: "Asymmetric Cryptography"
+weight: 7
+---
 References: 
 - [x] 11.5 RSA
 - [x] 12 Digital Signatures
@@ -24,7 +28,7 @@ The main disadvantage of public-key encryption is that it is roughly 2x to 3x or
 # Security Discussion
 
 ## Security against CPA:
-[[Symmetric Cryptography#CPA - Chosen plain text attacks|What is CPA?]]
+[What is CPA?](Symmetric%20Cryptography.md#CPA%20-%20Chosen%20plain%20text%20attacks)
 
 If a public key encryption scheme has indistinguishable encryptions in the presence of an eavesdropper then the scheme is CPA secure
 
@@ -34,14 +38,14 @@ If public key encryption scheme is CPA-secure then it also has indistinguishable
 an immediate consequence of this is that a CPA-secure public key encryption scheme for fixed length messages implies a public key encryption scheme for arbitrary length messages satisfying the same notion of security.
 
 ## Security against CCA:
-[[Attacks and Security Models#5. Chosen cipher text attack|What is CCA?]]
+[What is CCA?](Attacks%20and%20Security%20Models.md#5.%20Chosen%20cipher%20text%20attack)
 
 Broadly speaking, in the public key setting there are two classes of chosen ciphertext attacks:
 1. $\mathcal{A}$ might send a modified ciphertext $c^\prime$ to $\mathcal{R}$ on behalf of $\mathcal{S}$. Although it is unlikely that $\mathcal{A}$ would be able to obtain the entire decryption $m^\prime$ of $c^\prime$, it might still be possible for $\mathcal{A}$ to obtain some information about $m^\prime$ based on the subsequent behaviour of $\mathcal{R}$.
 2. $\mathcal{A}$ might send a modified ciphertext $c^\prime$ to $\mathcal{R}$ in its own name and might obtain the entire decryption for $c^\prime$. 
 
 ## Impossibility of perfectly secret public key encryption:
-[[Symmetric Cryptography#Perfect secrecy|What is perfect secrecy?]]
+[What is perfect secrecy?](Symmetric%20Cryptography.md#Perfect%20secrecy)
 
 In contrast to the private key setting, perfectly secret public key encryption is impossible.
 
@@ -100,7 +104,7 @@ So how can an adversary calculate $d$?
 - an adversary knows $e, N$.
 - Calculating $\phi(N)$ for a vary large composite number should be expensive
 - But if i am able to obtain prime factorization of $N$ into $p$ and $q$ then $\phi(N) = (p-1) \cdot (q-1)$
-- However, the prime factorization is difficult as discsussed in [[Asymmetric Cryptography#The Factoring Assumption |Factoring Assumption]]
+- However, the prime factorization is difficult as discsussed in [Factoring Assumption](Asymmetric%20Cryptography.md#The%20Factoring%20Assumption)
 
 
 ## Plain RSA: 

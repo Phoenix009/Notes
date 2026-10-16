@@ -1,3 +1,7 @@
+---
+title: "Software Security"
+weight: 15
+---
 # OS Basics
 
 ## Process
@@ -66,7 +70,7 @@ Advantages:
 
 ## Intel Registers
 
-![[intel-registers.png]]
+![intel-registers](images/intel-registers.png)
 
 General Purpose Registers for Intel x64/x86
 
@@ -104,7 +108,7 @@ In this table are the least signifiant bits accessed or most significant bits ac
 |r10**b**|last 8 bits|
 
 ## Intel Assembly
-![[x64_cheatsheet (1).pdf]]
+![x64_cheatsheet (1)](x64_cheatsheet%20%281%29.pdf)
 
 
 # Stack Organisation and Function Calls
@@ -141,7 +145,7 @@ In this table are the least signifiant bits accessed or most significant bits ac
 
 
 # Memory Layout: Stack in x64
-![[function-call-stack.png]]
+![function-call-stack](images/function-call-stack.png)
 
 ## Stack Frame
 - Stack Frame is functions perspective on stack
@@ -209,7 +213,7 @@ In this table are the least signifiant bits accessed or most significant bits ac
 ## Stack Buffer Overflow
 - a stack buffer overflow occurs when the targeted buffer is located on the stack usually as a local variable in a functions stack frame.
 
-![[buffer-overflow.png]]
+![buffer-overflow](images/buffer-overflow.png)
 - out of bounds write may corrupt data
 - Some programming languages do not enforce strict bounds checks.
 

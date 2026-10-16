@@ -1,4 +1,6 @@
-
+---
+title: "Replication"
+---
 ## Introduction:
 - Replicate state so that the service is always available
 - If one replica fails use another one
@@ -54,6 +56,6 @@ What kind of operations should be allowed? Are there any operations that can cau
 	- Each execution will lead to a new state
 
 
-Read: [[VM - Fault Tolerance]], [[Chain Replication]]
+Read: [VM - Fault Tolerance](Papers%20Summary/VM%20-%20Fault%20Tolerance.md), [Chain Replication](Chain%20Replication.md)
 
 

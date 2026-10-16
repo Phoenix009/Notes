@@ -1,3 +1,7 @@
+---
+title: "Datacenter Networks"
+weight: 17
+---
 The hosts in datacenters, called ==blades== and resembling pizza boxes, are generally commodity hosts that include CPU, memory, and disk storage. 
 
 The hosts are stacked in ==racks==, with each rack typically having 20 to 40 blades. At the top of each rack there is a switch, aptly named the ==Top of Rack (TOR) switch==, that interconnects the hosts in the rack with each other and with other switches in the datacenter.
@@ -8,7 +12,7 @@ To handle flows between external clients and internal hosts, the datacenter netw
 ## Hierarchical Architecture - Fat Tree:
 The network is divided into three main layers: the access layer, the aggregation layer, and the core layer.
 
-![[Fat_Tree.png]]
+![Fat_Tree](images/Fat_Tree.png)
 
 1. **Access Layer**: At the bottom of the fat tree, the access layer ==consists of switches that connect servers, storage systems, and other network devices==. Each device is connected to a switch in this layer. The access layer switches are typically low-cost and have a relatively low number of ports.
 
@@ -19,7 +23,7 @@ The network is divided into three main layers: the access layer, the aggregation
 **Properties of Fat Tree Layout**:
 - Multiple routes to the core. Once a core is chosen, path to the host is fixed.
 - Multiple paths for data traffic, which helps in load balancing and fault tolerance
-- Load balancing traffic from hosts. [[^314925|ECMP]] - Equal cost multi-path routing 
+- Load balancing traffic from hosts. [ECMP](%5E314925.md) - Equal cost multi-path routing 
 
 **Bisection Bandwidth**:
 Sum of the bandwidths of the minimal number of links cut to create the bisection.

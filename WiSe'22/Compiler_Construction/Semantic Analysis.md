@@ -1,4 +1,7 @@
-
+---
+title: "Semantic Analysis"
+weight: 2
+---
 ### Parse Trees and AST:
 
 Parse trees contains terminals that are used to make the grammar non-ambiguous. Ex: semicolons are used to make the grammar unambiguous.

@@ -1,3 +1,7 @@
+---
+title: "Mobility and Indirection"
+weight: 23
+---
 *How do you contact a mobile node?*
 - Mobile node moves from network to network
 - Correspondents want to send packets to mobile node

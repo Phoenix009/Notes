@@ -1,28 +1,32 @@
-1. [[Application Layer]]
-	1. [[Web and HTTP]]
-	2. [[DNS - Internets Directory Service]]
-	3. [[Email]]
-	4. [[Socket Programming]]
-2. [[Transport Layer]]
-	1. [[Connectionless Transport - UDP]]
-	2. [[Principles of Reliable Data Transfer]]
-	3. [[Pipelined RDT]]
-	4. [[Connection Oriented Transport - TCP]]
-3. [[Network Layer]]
-	1. [[Internet Protocol IP]]
-	2. [[Routing Algorithms]]
-	3. [[Anycast]]
-4. [[Link Layer]]
-6. [[Multimedia Networking]]
-7. [[Datacenter Networks]]
-8. [[Software Defined Networking]]
-9. [[Design Principles]]
-	1. [[Signalling]]
-	2. [[State]]
-10. [[RSVP]]
-11. [[Mobility and Indirection]]
-12. [[IOT]]
-13. [[QoS - Quality of Service]]
-14. [[Real Time Protocol]]
-15. [[Session Initiation Protocol]]
-16. [[QUIC]]
+---
+title: "Computer Networks"
+semester: "SoSe'23"
+---
+1. [Application Layer](Application%20Layer.md)
+	1. [Web and HTTP](Web%20and%20HTTP.md)
+	2. [DNS - Internets Directory Service](DNS%20-%20Internets%20Directory%20Service.md)
+	3. [Email](Email.md)
+	4. [Socket Programming](Socket%20Programming.md)
+2. [Transport Layer](Transport%20Layer.md)
+	1. [Connectionless Transport - UDP](Connectionless%20Transport%20-%20UDP.md)
+	2. [Principles of Reliable Data Transfer](Principles%20of%20Reliable%20Data%20Transfer.md)
+	3. [Pipelined RDT](Pipelined%20RDT.md)
+	4. [Connection Oriented Transport - TCP](Connection%20Oriented%20Transport%20-%20TCP.md)
+3. [Network Layer](Network%20Layer.md)
+	1. [Internet Protocol IP](Internet%20Protocol%20IP.md)
+	2. [Routing Algorithms](Routing%20Algorithms.md)
+	3. [Anycast](Anycast.md)
+4. [Link Layer](Link%20Layer.md)
+6. [Multimedia Networking](Multimedia%20Networking.md)
+7. [Datacenter Networks](Datacenter%20Networks.md)
+8. [Software Defined Networking](Software%20Defined%20Networking.md)
+9. [Design Principles](Design%20Principles.md)
+	1. [Signalling](Signalling.md)
+	2. [State](State.md)
+10. [RSVP](RSVP.md)
+11. [Mobility and Indirection](Mobility%20and%20Indirection.md)
+12. [IOT](IOT.md)
+13. [QoS - Quality of Service](QoS%20-%20Quality%20of%20Service.md)
+14. [Real Time Protocol](Real%20Time%20Protocol.md)
+15. [Session Initiation Protocol](Session%20Initiation%20Protocol.md)
+16. [QUIC](../../../Thesis/info/QUIC.md)

@@ -1,3 +1,7 @@
+---
+title: "Security"
+weight: 20
+---
 In the context of distributed systems, Security is the science and art of building ==distributed systems that maintain their properties even when a subset of nodes are malicious or adversarial or *Byzantine*==.
 
 **Fail-stop vs malicious behaviour**: Malicious behaviour contrasts with fail-stop behaviour, where a node either follows its role, or just stops participating (it never does any of the above)
@@ -9,4 +13,4 @@ A node is *malicious* if we cannot assume anything about its behaviour. In parti
 
 **Origin of malicious behaviour**: node has been under the control of a malicious entity.
 
-Read: [[Byzantine Fault Tolerance]]
+Read: [Byzantine Fault Tolerance](Byzantine%20Fault%20Tolerance.md)

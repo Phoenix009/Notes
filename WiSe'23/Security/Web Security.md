@@ -1,3 +1,7 @@
+---
+title: "Web Security"
+weight: 14
+---
 # SOP - Same Origin Policy
 consider the tuple (protocol, hostname, port#) for implementing constraints.
 

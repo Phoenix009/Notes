@@ -1,4 +1,7 @@
-
+---
+title: "Linear Algebra"
+weight: 2
+---
 # Introduction to Linear Algebra:
 
 ## Scalars: 

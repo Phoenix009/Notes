@@ -1,4 +1,7 @@
-
+---
+title: "Symmetric Cryptography"
+weight: 4
+---
 References: 
 - [x] 2.2-2.3
 - [x] 3.6.3
@@ -99,14 +102,14 @@ Computational security incorporates two relaxations:
 
 
 ## CPA - Chosen plain text attacks
-![[Attacks and Security Models#3. Chosen plaintext attack]]
+![Attacks and Security Models > 3. Chosen plaintext attack](Attacks%20and%20Security%20Models.md#3.%20Chosen%20plaintext%20attack)
 
 ## CPA Secure Encryption from Pseudorandom Functions
 - A naive attempt at constructing a secure encryption scheme from a pseudorandom permutation is to define $$Enc_k(m) = F_k(m)$$
 - This method of encryption is deterministic and so cannot be CPA-secure. encrypting the same plaintext twice will yield the same cipher text
 - Our secure construction is randomised. Specifically, we encrypt by applying the pseudorandom function to a random value $r$ (rather than the message) and XORing the result with the plaintext.
 
-![[encryption-pseudorandom-function.png]]
+![encryption-pseudorandom-function](images/encryption-pseudorandom-function.png)
 
 
 # Modes of Operation
@@ -117,7 +120,7 @@ Block ciphers mode of operation provide a way of encrypting arbitrary length mes
 ## ECB - Electronic Code Book
 
 ### Construction
-![[ecb.png|center]]
+![ecb](images/ecb.png)
 naive mode of operation in which the cipher text is obtained by direct application of the block cipher to each plain text blocks.
 $$c := \langle F_k(m_1), F_k(m_1), \cdots, F_k(m_l) \rangle$$
 ### Discussion
@@ -127,7 +130,7 @@ $$c := \langle F_k(m_1), F_k(m_1), \cdots, F_k(m_l) \rangle$$
 
 ## CBC - Cipher Block Chaining
 ### Construction
-![[cbc.png|center]]
+![cbc](images/cbc.png)
 - A uniform initialisation vector $IV$ of length $n$ is first chosen
 - set $c_0 = IV$
 - for $i = 1 \text{ to } l, c_i = F_k(c_{i-1} \oplus m_i)$
@@ -140,7 +143,7 @@ $$c := \langle F_k(m_1), F_k(m_1), \cdots, F_k(m_l) \rangle$$
 ## CTR - Counter
 
 ### Construction
-![[ctr.png]]
+![ctr](images/ctr.png)
 - a uniform value $ctr \in \{0, 1\}^n$ is chosen
 - pseudorandom stream is generated $y_i = F_k(ctr + i)$
 - the $i$th cipher block is calculated as $c_i = y_i \oplus m_i$
@@ -149,7 +152,7 @@ $$c := \langle F_k(m_1), F_k(m_1), \cdots, F_k(m_l) \rangle$$
 - encryption and decryption can be fully parallelised
 - if $F$ is pseudorandom then CTR mode is CPA-secure
 
-# [[Integrity]]
+# [Integrity](Integrity.md)
 
-# [[Key Distribution]]
+# [Key Distribution](Key%20Distribution.md)
 

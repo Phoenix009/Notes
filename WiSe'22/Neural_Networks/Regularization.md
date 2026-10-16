@@ -1,4 +1,7 @@
-
+---
+title: "Regularization"
+weight: 7
+---
 Regularization is any modification we make to a learning algorithm that is intended to reduce the generalization error but not its training error.
 
 These constraints and penalties are designed to encode specific kinds of prior knowledge. Other times, these constrains are designed to express a generic preference for a simpler model class in order to promote generalization.
@@ -48,7 +51,7 @@ $$
 We can see that the addition of the weight decay term to the overall cost function leads to multiplicatively shrink the weight by a constant factor before doing the usual weight update.
 
 What is the effect over the entire training?
-![[L2Regularization.png]]
+![L2Regularization](images/L2Regularization.png)
 
 
 Only directions along which the parameters contribute significantly to reducing the objective function are preserved relatively intact.
@@ -89,7 +92,7 @@ $$
 
 We can see that the regularization contribution to the gradient is no longer scales linearly with each $w_i$ instead it is a constant contribution of $\epsilon \alpha$ with sign equal to $\text{sign}(w_i)$
 
-![[L1Regularization.png]]
+![L1Regularization](images/L1Regularization.png)
 
 
 In comparison to the $L^2$ regularization, $L^1$ regularization results in a solution that is more sparse. Sparsity in this context refers to the fact that some parameters have an optimal value of zero.

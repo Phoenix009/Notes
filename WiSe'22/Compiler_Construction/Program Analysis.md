@@ -1,14 +1,18 @@
+---
+title: "Program Analysis"
+weight: 3
+---
 1. Data Flow Analysis
-    1. [[#Dead Code Analysis]]
-    2. [[#Definite Assignment]]
+    1. [Dead Code Analysis](#Dead%20Code%20Analysis)
+    2. [Definite Assignment](#Definite%20Assignment)
 2. Lattices and Fix point of monotone function
     1. Algorithms
-3. [[#Constant Propagation]]
-    1. [[#Unreachable Code]]
-    2. [[#Domain Cooperation (Unreachable code and Constant Propagation)]]
-4. [[#Abstract Interpretation]]
-5. [[#Pentagons and Bound Checking]]
-6. [[#Global Value Numbering]]
+3. [Constant Propagation](#Constant%20Propagation)
+    1. [Unreachable Code](#Unreachable%20Code)
+    2. [Domain Cooperation (Unreachable code and Constant Propagation)](#Domain%20Cooperation%20%28Unreachable%20code%20and%20Constant%20Propagation%29)
+4. [Abstract Interpretation](#Abstract%20Interpretation)
+5. [Pentagons and Bound Checking](#Pentagons%20and%20Bound%20Checking)
+6. [Global Value Numbering](#Global%20Value%20Numbering)
 
 ### Dead Code Analysis:
 
@@ -165,7 +169,7 @@ How do we compute a solution for the in-equation systems?
 	is the least fix point.
 
 
-![[lfp_latex.png]]
+![lfp_latex](images/lfp_latex.png)
 
 
 For the upper part of the diagram:

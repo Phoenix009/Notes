@@ -1,3 +1,7 @@
+---
+title: "Attacks and Security Models"
+weight: 8
+---
 # Classes of attacks and Security Models
 
 The attacks an adversary can mount can be classified as follows:

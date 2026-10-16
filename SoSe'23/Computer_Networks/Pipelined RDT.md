@@ -1,3 +1,7 @@
+---
+title: "Pipelined RDT"
+weight: 9
+---
 $\texttt{RDT3.0}$ is a functionally correct protocol but has performance issues. $\texttt{RDT3.0}$’s performance problem is the fact that it is a stop and wait protocol.
 
 The solution of this particular performance problem is simple: the sender is allowed to send multiple packets without waiting for acknowledgments. This technique is known as pipelining.

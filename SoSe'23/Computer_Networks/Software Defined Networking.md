@@ -1,3 +1,7 @@
+---
+title: "Software Defined Networking"
+weight: 18
+---
 ## Traditional Computer Networks:
 ### Data Plane:
 - Fast but dumb elements of the network. Perform forwarding, filtering, buffering etc.

@@ -1,4 +1,6 @@
-
+---
+title: "Memory Coherence in Shared Virtual Memory Systems"
+---
 ## Design Choices for Memory Coherence:
 
 Our design goals require that the shared virtual memory are coherent. Coherence can be maintained if a shared virtual memory satisfies the following single constraint:
@@ -41,7 +43,7 @@ The strategies may be classified by the way in which one deals with page synchro
 
 
 ## Solutions for Memory coherence Problems:
-![[distributed_systems-Page-2.drawio.svg]]
+![distributed_systems-Page-2.drawio](images/distributed_systems-Page-2.drawio.svg)
 
 ## Improved Centralised Manager Algorithms:
 
@@ -60,8 +62,8 @@ The following diagrams provide the flowchart of the fault handlers and their cor
 - Fault handlers are functions that are invoked when a read/write operation is performed on a page that is not owned by the processor.
 - Services are functions that are invoked when a read/write request is received by a page owner from the manager.
 
-![[centralised-manager-read.svg]]
-![[centralised-manager-write.svg]]
+![centralised-manager-read](images/centralised-manager-read.svg)
+![centralised-manager-write](images/centralised-manager-write.svg)
 
 
 ## Distributed Manager Algorithms:
@@ -91,6 +93,6 @@ The heart of a dynamic distributed manager algorithm is to attempt to keep track
 The information that `porb_owner` contains is not necessarily correct at all times, but if incorrect it will at least provide the beginning of a sequence of processors through which the true `owner` can be found.
 
 
-![[distributed-manager-read.svg]]
-![[distributed-manager-write.svg]]
+![distributed-manager-read](images/distributed-manager-read.svg)
+![distributed-manager-write](images/distributed-manager-write.svg)
 

@@ -1,4 +1,6 @@
-
+---
+title: "VM - Fault Tolerance"
+---
 Provide fault tolerant virtual machines, based on the approach of replicating the execution of a primary virtual machine via a backup virtual machine on another server.
 
 ## Introduction
@@ -20,7 +22,7 @@ Provide fault tolerant virtual machines, based on the approach of replicating th
 ## Basic FT Design:
 
 
-![[VM-Ft.svg]]
+![VM-Ft](images/VM-Ft.svg)
 
 
 ### Deterministic Replay Implementation:

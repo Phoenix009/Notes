@@ -1,3 +1,7 @@
+---
+title: "Eventual Consistency"
+weight: 8
+---
 ### Lamport Clocks:
 Partially synchronized logical clock per replica.  P's current logical clock denoted LC\[P]
 
@@ -19,4 +23,4 @@ If we totally order events while respecting lamport clocks, we wont violate caus
 
 
 
-Read: [[Bayou]]
+Read: [Bayou](Papers%20Summary/Bayou.md)

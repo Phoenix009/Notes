@@ -1,3 +1,7 @@
+---
+title: "Map Reduce"
+weight: 9
+---
 ### Introduction:
 
 The issues of how to parallelise the computation, distribute the data, and handle failures conspire to obscure the original simple computation with large amounts of complex code to deal with these issues.

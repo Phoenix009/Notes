@@ -1,4 +1,7 @@
-
+---
+title: "Important ideas and concepts"
+weight: 21
+---
 1. **RPC - remote procedure call**:
 	- Helps to invoke procedures on a remote server
 	- Makes it appear to be like an ordinary procedure call

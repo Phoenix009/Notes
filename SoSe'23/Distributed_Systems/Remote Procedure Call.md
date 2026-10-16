@@ -1,4 +1,7 @@
-
+---
+title: "Remote Procedure Call"
+weight: 2
+---
 Makes the programming of distributed systems look similar, if not identical, to conventional programming - achieving high level of distribution transparency.
 
 
@@ -13,7 +16,7 @@ Request-reply protocols can be implemented in different ways to provide differen
 
 Combinations of these choices lead to a variety of possible semantics for the reliability of remote invocations.
 
-![[RPC_semantics.svg]]
+![RPC_semantics](images/RPC_semantics.svg)
 
 
 ##### 1. Maybe Semantics:

@@ -1,4 +1,7 @@
-
+---
+title: "Recurrent Neural Networks"
+weight: 10
+---
 A Recurrent Neural network is a neural network that is specialized for processing a sequence of values $x^{(1)}, \cdots, x^{(\tau)}$. Recurrent networks can scale to much longer sequences than would be practical for networks without sequence based specialization.
 
 Parameter sharing makes it possible to extend and apply the model to examples of different forms (here, different lengths) and generalize across them. Such sharing is particularly important when a specific peice of information can occur at multiple positions within the sequence.
@@ -25,7 +28,7 @@ $$
 s^{(3)} = f(f(s^{(1)}; \theta); \theta)
 $$
 
-![[unfolding.png]]
+![unfolding](images/unfolding.png)
 
 Thus we have unfolded of a recursive computation into a computational graph that has a repeatetive structure. Unfolding this graph results in parameter sharing across a deep network structure.
 
@@ -51,7 +54,7 @@ We now develop the forward propagation equiations for the $\text{RNN}$.
 
 We assume a hyperbolic tangent activation function. We also assume that the output is discrete. A natural way to represent discrete variables is to regard the output as giving unnormalized log probabilities of each possbile value of the discrete variable.
 
-![[rnn.png]]
+![rnn](images/rnn.png)
 
 We can then apply the softmax function operation as a post-processing step to obtain a vectire $\hat{y}$ of normalized probabilities over the output.
 
@@ -120,19 +123,19 @@ In, general, RNNs allow the extension of the graphical model to represent condit
 
 In case of $RNN$ this can be acheived in different ways.
 
-![[interactions.png]]
+![interactions](images/interactions.png)
 
 The interaction between the input $x$ and each hidden unit vector $h^{(t)}$ is parameterized by a newly introduced weight matrix $R$. The product $x^{\top}R$ is added as additional input to the hidden units at every time step.
 
 Rather than receiving only a single vector $x$ as input, RNN may receive a sequence of vectors $x^{(t)}$ as input. The model given above corresponds to a distribution that makes conditional independence assumptions.
 
-![[conditional_independence.png]]
+![conditional_independence](images/conditional_independence.png)
 
 To remove conditional independence assumption, we can add connections from the output at time $t$ to a hidden unit at time $t+1$.
 
 # Bidirectional RNNs:
 
-![[bidirectional_rnn.png]]
+![bidirectional_rnn](images/bidirectional_rnn.png)
 
 All of the RNNs considered up to now have a causal structure meaning that the state at time $t$ only captures information from the past and the present input.
 

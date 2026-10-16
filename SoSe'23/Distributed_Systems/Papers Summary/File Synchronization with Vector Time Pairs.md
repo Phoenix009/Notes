@@ -1,3 +1,6 @@
+---
+title: "File Synchronization with Vector Time Pairs"
+---
 A vector time pair consists of two vector times: one tracking file modification history and one trancking file synchronization history.
 
 ### Problem Statement: Sychronization:

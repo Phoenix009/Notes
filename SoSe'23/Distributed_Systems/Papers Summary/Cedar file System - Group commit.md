@@ -1,3 +1,6 @@
+---
+title: "Cedar file System - Group commit"
+---
 - The system uses a log, as do most database systems, to recover metadata about the file system. 
 - To gain performance, it uses ==group commit==, a concept derived from high performance database systems.
 

@@ -1,3 +1,7 @@
+---
+title: "Link Layer"
+weight: 15
+---
 We will refer to any device that runs a link-layer protocol (such as hosts, routers, switches and WiFi access points) as a ==node==. 
 
 We will also refer to the communication channels that connect adjacent nodes along the communication paths as ==links==.
@@ -81,7 +85,7 @@ Each of the CRC standards can detect
 In CRC, all calculations are done in modulo-2 arithmetic. All additions are done without carry and subtractions without borrow. Thus $\texttt{a + b = a - b = a XOR b}$
 
 
-![[CRC.png]]
+![CRC](images/CRC.png)
 
 How the sender computes $R$. We want to find $R$ such that there is an $n$ such that
 
@@ -260,7 +264,7 @@ The IP Address is of the ultimate receiver host but the MAC address is of the ne
 
 Ethernet Frame Structure:
 
-![[EthernetFrame.png]]
+![EthernetFrame](images/EthernetFrame.png)
 
 1. $\texttt{Data (46-1500B)}$ : $\texttt{MTU}$ - Maximum Transmission Unit for ethernet is $\texttt{1500B}$
 2. $\texttt{Destination Address (6B)}$: Contains the MAC address of the destination adapter

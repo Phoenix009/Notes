@@ -1,4 +1,6 @@
-
+---
+title: "Exercise3 - Software Security III"
+---
 | Team Member | Matriculation Number |
 |-|-|
 |Pranav Shetty | 7028806 |
@@ -25,7 +27,7 @@ Wrong.
 
 # 2. Return to libc
 ## a.
-![[assignment3.png]]
+![assignment3](../images/assignment3.png)
 ## b.
 - The 1st parameter of function `g` has the same offset as that of the 2nd parameter of function `f`, so only one parameter can be passed.
 - There are no restrictions for function `g` as there are no overlapping parameters.

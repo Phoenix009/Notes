@@ -1,3 +1,7 @@
+---
+title: "Application Layer"
+weight: 1
+---
  
 ### Network Application Architectures:
 From the application developer perspective, ==the network architecture is fixed== and provides a specific set of services to applications.
@@ -118,7 +122,7 @@ UDP is a lightweight transport protocol, providing minimal services. It is conne
 
 UDP provides no guarantee that the message will ever reach the receiving process. Furthermore, messages that do arrive at the receiving process may arrive out of order.
 
-### [[Web and HTTP]]
-### [[DNS - Internets Directory Service]]
-### [[Email]]
-### [[Socket Programming]]
+### [Web and HTTP](Web%20and%20HTTP.md)
+### [DNS - Internets Directory Service](DNS%20-%20Internets%20Directory%20Service.md)
+### [Email](Email.md)
+### [Socket Programming](Socket%20Programming.md)

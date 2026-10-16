@@ -1,3 +1,7 @@
+---
+title: "Strict Consistency"
+weight: 4
+---
 Rule: Loads will always see the most recent Store made by any machine
 
 Under strict consistency rules:

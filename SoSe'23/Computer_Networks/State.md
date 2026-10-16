@@ -1,3 +1,7 @@
+---
+title: "State"
+weight: 21
+---
 ## Separation of control and data
 
 *Why?*

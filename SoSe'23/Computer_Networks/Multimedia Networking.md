@@ -1,4 +1,7 @@
-
+---
+title: "Multimedia Networking"
+weight: 16
+---
 ## Multimedia Networking Applications:
 We define a multimedia network application as any network application that employs audio or video.
 
@@ -104,7 +107,7 @@ When a browser in a user’s host is instructed to retrieve a specific video (id
 
 Most CDNs take advantage of the DNS to intercept and redirect requests; Consider example
 
-![[CDN_operation.png]]
+![CDN_operation](images/CDN_operation.png)
 
 1. User visits the website for getting the video
 2. User sends a DNS request to resolve `videos.server.com`
@@ -194,14 +197,14 @@ VoIP applications often use some type of loss anticipation scheme. Two types of 
 
 
 #### FEC:
-![[FEC.png]]
+![FEC](images/FEC.png)
 The basic idea of FEC is to add redundant information to the original packet stream. For the cost of marginally increasing the transmission rate, the redundant information can be used to reconstruct approximations or exact versions of some of the lost packets.
 
 The mechanism sends a lower-resolution audio stream as the redundant information. The sender constructs the nth packet by taking the nth chunk from the nominal stream and appending to it the (n – 1)st chunk from the redundant stream. In this manner, whenever there is nonconsecutive packet loss, the receiver can conceal the loss by playing out the low-bit rate encoded chunk that arrives with the subsequent packet.
 
 
 #### Interleaving:
-![[Interleaving.png]]
+![Interleaving](images/Interleaving.png)
 As an alternative to redundant transmission, a VoIP application can send interleaved audio. The sender resequences units of audio data before trans- mission, so that originally adjacent units are separated by a certain distance in the transmitted stream. Interleaving can mitigate the effect of packet losses. 
 
 The loss of a single packet from an interleaved stream results in multiple small gaps in the reconstructed stream, as opposed to the single large gap that would occur in a non-interleaved stream. A major advantage of inter- leaving is that it does not increase the bandwidth requirements of a stream.

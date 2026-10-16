@@ -1,3 +1,7 @@
+---
+title: "Basic Notions"
+weight: 2
+---
 # Basic Components:
 
 

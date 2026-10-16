@@ -1,4 +1,7 @@
-
+---
+title: "Connectionless Transport - UDP"
+weight: 7
+---
 UDP does just about as little as a transport protocol can do. Aside from the multiplexing/demultiplexing function and some light error checking, it adds nothing to IP.
 
 UDP takes messages from the application process, attaches source and destination port number fields for the multiplexing/demultiplexing service, adds two other small fields and passes the resulting segment to the network layer.
@@ -15,7 +18,7 @@ It is possible for an application to have reliable data transfer when using UDP.
 
 ### Segment Structure:
 
-![[udp_segment.png]]
+![udp_segment](images/udp_segment.png)
 
 The application data occupies the data field of the UDP segment.
 

@@ -1,4 +1,7 @@
-
+---
+title: "Internet Protocol IP"
+weight: 12
+---
 Internet addressing and forwarding are important components of the Internet Protocol (IP).
 
 
@@ -6,7 +9,7 @@ Internet addressing and forwarding are important components of the Internet Prot
 
 Internet addressing and forwarding are important components of the Internet Protocol (IP).
 
-![[netwokr_layer_functions.png]]
+![netwokr_layer_functions](images/netwokr_layer_functions.png)
 
 The Internet’s network layer has three major components. 
 
@@ -15,7 +18,7 @@ The Internet’s network layer has three major components.
 3. Facility to report errors in datagrams and respond to requests of certain network layer information.
 
 ### Datagram Format:
-![[ip4_datagram.png]]
+![ip4_datagram](images/ip4_datagram.png)
 
 1. $\texttt{}$$\texttt{Version\#}$ - $\texttt{4b}$ specify the IP Protocol version
    
@@ -184,7 +187,7 @@ Private addresses only have meaning within a given network, *how is addressing h
 
 $\texttt{NAT}$ router behaves to the outside world as a single device with a single $\texttt{}$$\texttt{IP Address}$. In essence, the $\texttt{NAT}$ router is hiding the details of the network from the outside world.
 
-![[NAT_translation.png]]
+![NAT_translation](images/NAT_translation.png)
 
 $\texttt{NAT}$ router maintains a $\texttt{NAT Translation Table}$.
 
@@ -214,7 +217,7 @@ $\texttt{ICMP}$ messages have a $\texttt{type}$ and a $\texttt{code}$ field, and
 
 #### `traceroute` Program:
 
-![[traceroute.png]]
+![traceroute](images/traceroute.png)
 
 Used to determine the name and the addresses of the routers between source and destination hosts
 
@@ -254,7 +257,7 @@ The most important changes introduced in $\texttt{IPv6}$ are evident in the data
 
 $\texttt{IPv6}$ Datagram Format:
 
-![[ip6_datagram.png]]
+![ip6_datagram](images/ip6_datagram.png)
 
 1. $\texttt{Version}$: $\texttt{4b}$ field identifies the $\texttt{IP}$ version.
 2. $\texttt{Traffic Class}$: $\texttt{8b}$ field is similar in spirit to the $\texttt{TOS}$
@@ -279,7 +282,7 @@ $\texttt{IPv6}$ systems can be made backward compatible, so they can send, route
 
 Probably the most straightforward way to introduce $\texttt{IPv6}$ capable nodes is a ==dual-stack approach== where, $\texttt{IPv6}$ nodes also have a complete $\texttt{IPv4}$ implementation. Such a node can operate on both $\texttt{IPv4 and IPv6}$ datagrams.
 
-![[ip_tunnelling.png]]
+![ip_tunnelling](images/ip_tunnelling.png)
 
 While using dual-stack approach, it is possible that two $\texttt{IPv6}$-capable nodes would have to communicate using $\texttt{IPv4}$. This happens when the two nodes are intervened by $\texttt{IPv4}$ nodes.
 

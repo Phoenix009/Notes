@@ -1,3 +1,7 @@
+---
+title: "Multi Agent Systems"
+weight: 16
+---
 ## Introduction
 
 When a server is distributing a large file with $F$ bits to $N$ receivers at rate $u_s$
@@ -66,4 +70,4 @@ $$\max\{\frac{NF}{u_s}, \frac{F}{d_\min}, \frac{NF}{u_s + \sum_i(u_i)}\}$$
 - Propagating query to a sub-node may take more time than for the super-node to answer itself
 - 
 
-Read: [[BitTorrent]]
+Read: [BitTorrent](Papers%20Summary/BitTorrent.md)

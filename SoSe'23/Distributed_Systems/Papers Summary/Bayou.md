@@ -1,3 +1,6 @@
+---
+title: "Bayou"
+---
 ### Introduction:
 
 The Bayou replicated storage system was designed to support a variety of non-real-time collaborative applications.

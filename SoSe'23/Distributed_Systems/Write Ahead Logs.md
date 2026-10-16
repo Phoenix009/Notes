@@ -1,3 +1,6 @@
+---
+title: "Write Ahead Logs"
+---
 *How to maintain ==CONSISTENCY== of persistent data in the face of failures.*
 
 ## Key Idea for Storage Crash Tolerance:
@@ -63,8 +66,8 @@ Duplicate Writes: We are still writing data twice. Once on the log and once on t
 
 ### Design 4: Copy-on-Write REDO Logs
 
-![[COW.svg]]
+![COW](images/COW.svg)
 
 The actual data blocks are pointed to from meta data blocks and can be modified to point to the new blocks.
 
-Read: [[Cedar file System - Group commit]]
+Read: [Cedar file System - Group commit](Papers%20Summary/Cedar%20file%20System%20-%20Group%20commit.md)

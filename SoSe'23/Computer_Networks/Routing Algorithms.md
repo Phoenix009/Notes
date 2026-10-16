@@ -1,3 +1,7 @@
+---
+title: "Routing Algorithms"
+weight: 13
+---
 Typically a host is attached directly to one router, the ==default router== for the host (aka. first-hop router). We refer to the default router of the source host as the source router and of the destination as destination router.
 
 The purpose of a routing algorithm is then simple: given a set of routers, with links connecting the routers, a routing algorithm finds a “good” path from source to destination router.
@@ -32,7 +36,7 @@ The result of the broadcast is that all nodes have an identical complete view of
 
 ##### Problem:
 One case to consider is when link costs are equal to the load carried on the link (ex. delay). In this case the link costs may not be symmetric, i.e. $c(x, y) \neq c(y, x)$. 
-![[LS-osciallation.png]]
+![LS-osciallation](images/LS-osciallation.png)
 In the above example the paths are oscillating from clockwise paths to counter-clockwise paths after every iteration of shortest paths calculation. To prevent such oscillations one solution would be to ensure that not all routers run the LS algorithm at the same time. 
 
 
@@ -187,7 +191,7 @@ Two types of synchronisation:
 
 #### Inter-AS Routing: BGP
 
-![[bgp.png]]
+![bgp](images/bgp.png)
 
 BGP - Border Gateway Protocol is the ==de-facto standard== inter-AS routing protocol. As an inter-AS routing protocol BGP provides each AS a means to 
 1. Obtain subnet reachability information from neighbouring ASs
@@ -224,7 +228,7 @@ The NEXT-HOP is the router interface that begins the AS-PATH. It is the IP addre
 ###### Origin:
 
 ###### Multiple Exit Discriminator:
-Which interface to chose if we get two equally "best" AS-PATH for the same AS. (Refer [[#BGP Route Selection]] for better understanding)
+Which interface to chose if we get two equally "best" AS-PATH for the same AS. (Refer [BGP Route Selection](#BGP%20Route%20Selection) for better understanding)
 
 - Non transitive: apply only to the immediate neighbours
 - Used to convey the relative preferences for entry points
@@ -245,7 +249,7 @@ When a gateway router receives a route advertisement, it uses its ==import polic
 - whether to set certain attributes such as the router preference metrics.
 The import policy may filter a route because the AS may not want to send traffic over one of the ASs in the route’s AS-PATH.
 
-![[bgp_route.png]]
+![bgp_route](images/bgp_route.png)
 Router must learn more than one route to some prefix to make a decision which one is better.
 
 ==The following elimination rules are used to select the "best route":==

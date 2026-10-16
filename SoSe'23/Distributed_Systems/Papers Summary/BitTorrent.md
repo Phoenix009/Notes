@@ -1,4 +1,6 @@
-
+---
+title: "BitTorrent"
+---
 ## What BitTorrent Does:
 When a file is made available using HTTP, all upload cost is placed on the hosting machine. 
 

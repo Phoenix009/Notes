@@ -1,5 +1,9 @@
+---
+title: "QoS - Quality of Service"
+weight: 25
+---
 ## Network support for Multimedia
-![[qos.svg]]
+![qos](images/qos.svg)
 
 
 ### Dimensioning Best Effort Networks:

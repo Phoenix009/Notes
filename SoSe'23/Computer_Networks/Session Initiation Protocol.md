@@ -1,3 +1,7 @@
+---
+title: "Session Initiation Protocol"
+weight: 27
+---
 All telephone calls, video conference calls take place over internet
 - people identified by names or email addresses rather than phone numbers
 - Can reach callee no matter where callee roams, no matter what IP device callee is currently using

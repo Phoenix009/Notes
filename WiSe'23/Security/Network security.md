@@ -1,18 +1,22 @@
+---
+title: "Network security"
+weight: 13
+---
 # DNS - Domain Name System
-## [[DNS - Internets Directory Service#Introduction|What is  DNS?]]
+## [What is  DNS?](../../SoSe'23/Computer_Networks/DNS%20-%20Internets%20Directory%20Service.md#Introduction)
 
-## [[DNS - Internets Directory Service#Distributed Hierarchical Database|DNS Hierarchy]]
+## [DNS Hierarchy](../../SoSe'23/Computer_Networks/DNS%20-%20Internets%20Directory%20Service.md#Distributed%20Hierarchical%20Database)
 
 ## DNS Resolution
-![[DNS - Internets Directory Service#Resolution|DNS Resolution]]
+![DNS Resolution](../../SoSe'23/Computer_Networks/DNS%20-%20Internets%20Directory%20Service.md#Resolution)
 
 ## DNS Resource Records
-![[DNS - Internets Directory Service#DNS Records and Messages]]
+![DNS - Internets Directory Service > DNS Records and Messages](../../SoSe'23/Computer_Networks/DNS%20-%20Internets%20Directory%20Service.md#DNS%20Records%20and%20Messages)
 
 
 
 ## DNS caching
-![[DNS - Internets Directory Service#DNS Caching]]
+![DNS - Internets Directory Service > DNS Caching](../../SoSe'23/Computer_Networks/DNS%20-%20Internets%20Directory%20Service.md#DNS%20Caching)
 
 This allows for security attacks that affect both privacy and security. Ex: DNS Snooping and DNS Poisoning
 
@@ -105,13 +109,13 @@ NSEC3:
 
 
 # Routing
-[[Routing Algorithms]]
+[Routing Algorithms](../../SoSe'23/Computer_Networks/Routing%20Algorithms.md)
 
 - Routing is the process of transmitting packets from a source to a destination.
 - Routers accept incoming packets and forwards them towards the destination on outgoing links
 - Routing tables are used to find which router to forward the packet to.
 
-[[Routing Algorithms#Inter-AS Routing BGP|What is BGP?]]
+[What is BGP?](../../SoSe'23/Computer_Networks/Routing%20Algorithms.md#Inter-AS%20Routing%20BGP)
 
 BGP Hijacking:
 - Hijack by advertising false and malicious advertisements.

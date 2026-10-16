@@ -1,4 +1,7 @@
-
+---
+title: "Machine Learning Basics"
+weight: 5
+---
 # Introducution
 ## The Task $T$:
 
@@ -110,7 +113,7 @@ Capacity is not determined only by the choice of model. The model specifies the 
 
 In many cases, finding the best solution within this family is a very difficult optimization problem. These additional limitations, such as the imperfection of the optimization algorithm, mean that the effective capacity may be less than the representational capacity of the model family.
 
-![[capacity.png]]
+![capacity](images/capacity.png)
 
 
 One important results in statistical learning theory shows that the gap between the training and the test error is upper bounded by a quantity that grows as the capacity increases and decreases as the training sample increases.

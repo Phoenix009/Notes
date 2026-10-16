@@ -1,3 +1,6 @@
+---
+title: "Chain Replication"
+---
 Chain replication is a new approach to coordinating clusters of fail-stop storage servers. The approach is intended for supporting large-scale storage services that exhibit ==high throughput and availability without sacrificing strong consistency== guarantees
 
 
@@ -27,7 +30,7 @@ Servers are assumed to be Fail-Stop:
 
 With an object replicated on t servers, as many as t−1 of the servers can fail without compromising the object’s availability.
 
-![[Chain-Replication.svg]]
+![Chain-Replication](Papers%20Summary/images/Chain-Replication.svg)
 
 In chain replication, ==the servers replicating state are linearly ordered to form a chain.== The first server in the chain is called the head, the last server is called the tail, and request processing is implemented by the servers roughly as follows:
 - **Reply Generation**: The reply for every request is generated and sent by the tail.

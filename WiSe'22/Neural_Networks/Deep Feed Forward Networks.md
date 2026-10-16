@@ -1,3 +1,7 @@
+---
+title: "Deep Feed Forward Networks"
+weight: 6
+---
 # Introduction:
 
 **Goal**: the goal of a feedforward network is to approximate some function $f^{*}$
@@ -287,7 +291,7 @@ In general the layers need not be connected in a chain, even though this is the 
 
 Many architectures build a main chain but then add extra architectural features to it, such as a skip connection going from layer $i$ to layer $i+2$ or higher.
 
-![[layers.png]]
+![layers](images/layers.png)
 
 Test set accuracy increases with the increasing number of layers consistently. Deeper networks generalize better. 
 

@@ -1,4 +1,7 @@
-
+---
+title: "Socket Programming"
+weight: 5
+---
 A typical network application consists of a pair of programs — 
 a client program and a server program — residing in two different end systems. 
 

@@ -1,4 +1,6 @@
-
+---
+title: "Exercise1 - Software Security I"
+---
 | Team Member | Matriculation Number |
 |-|-|
 |Pranav Shetty | 7028806 |
@@ -72,4 +74,4 @@ The snippet calculates the factorial of the input number given in `rax` and stor
 
 ### 3. Control Flow Graph
 
-![[Exercise1_cfg.drawio.png]]
+![Exercise1_cfg.drawio](Exercise1_cfg.drawio.png)

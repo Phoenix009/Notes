@@ -1,4 +1,7 @@
-
+---
+title: "SSA - Single Static Assignment"
+weight: 5
+---
 ### Problem and Motivation:
 
 For constant propagation analysis, we have to store the mapping $\text{Vars} \mapsto Z^{\top}_{\bot}$ for every program point $V$. Thus the space requirement is $|\text{Vars}| \times V$.

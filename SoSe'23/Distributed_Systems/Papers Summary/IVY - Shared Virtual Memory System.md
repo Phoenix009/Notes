@@ -1,3 +1,6 @@
+---
+title: "IVY - Shared Virtual Memory System"
+---
 ### Shared Memory vs. Message Passing:
 There are two main models for message passing: the message passing interface (MPI) and the remote procedure call (RPC) model. 
 
@@ -37,7 +40,7 @@ Memory mapping managers are responsible for :
 1. implementing the mapping from the local memory to the shared virtual memory
 2. keeping the address space coherent.
 
-We can refer the "[[Memory Coherence in Shared Virtual Memory Systems]]" paper to understand how the address space is kept consistent.
+We can refer the "[Memory Coherence in Shared Virtual Memory Systems](Memory%20Coherence%20in%20Shared%20Virtual%20Memory%20Systems.md)" paper to understand how the address space is kept consistent.
 
 
 #### 2. Process and Process Scheduling:

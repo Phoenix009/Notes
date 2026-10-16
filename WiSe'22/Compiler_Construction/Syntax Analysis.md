@@ -1,4 +1,7 @@
-
+---
+title: "Syntax Analysis"
+weight: 1
+---
 ### Context Free Grammars:
 
 Is a tuple $G = (V_{N}, V_{T}, P, S)$

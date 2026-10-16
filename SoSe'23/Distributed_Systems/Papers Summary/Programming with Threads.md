@@ -1,3 +1,6 @@
+---
+title: "Programming with Threads"
+---
 ## Introduction:
 A "thread" is a straightforward concept: a single sequential flow of control. Having multiple threads in a program means that at any instant the program has multiple points of execution. 
 

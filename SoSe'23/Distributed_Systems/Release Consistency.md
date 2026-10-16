@@ -1,3 +1,7 @@
+---
+title: "Release Consistency"
+weight: 6
+---
 The use of global locks for all address space can attain sequential consistency if the locks are used properly.
 
 However, use of global locks leads to no concurrency at all. Only one machine can access memory at a time. This issue can be addressed by controlling the lock granularity.
@@ -34,4 +38,4 @@ On fault, pull only the parts of the page that were modified. This is implemente
 How do we know which of these updates are new and which are already applied?
 Requires a timestamp.
 
-Read: [[TreadMarks]]
+Read: [TreadMarks](Papers%20Summary/TreadMarks.md)

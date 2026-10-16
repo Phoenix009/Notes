@@ -1,4 +1,7 @@
-
+---
+title: "Authentication"
+weight: 12
+---
 The theoretical number of possible combinations
 $$
 |A|^L

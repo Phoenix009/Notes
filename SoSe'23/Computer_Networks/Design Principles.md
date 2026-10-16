@@ -1,17 +1,21 @@
+---
+title: "Design Principles"
+weight: 19
+---
 ### Goals:
 - Identify, study common architectural components, protocol mechanisms, approaches we find in network architectures
 
 ### Design Principles:
-- [[State#Separation of control and data|Separation of data and control]]
-- [[State#Hard State vs Soft State|Hard State vs Soft State]]
+- [Separation of data and control](State.md#Separation%20of%20control%20and%20data)
+- [Hard State vs Soft State](State.md#Hard%20State%20vs%20Soft%20State)
 - Randomisation
 - Indirection
 - Network Virtualisation
 - Resource Sharing
 - Design for scale
 
-## [[Signalling]]
-## [[State]]
+## [Signalling](Signalling.md)
+## [State](State.md)
 
 
 ## Internet Design Philosophy:

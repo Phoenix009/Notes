@@ -1,3 +1,7 @@
+---
+title: "Connection Oriented Transport - TCP"
+weight: 10
+---
 TCP is said to be a ==connection-oriented== because before one application process can begin to send data to another, the two processes must first establish a connection using a “handshake”. 
 
 Provides a ==full duplex communication== that is always point-to-point, ==multicasting is not possible with TCP==.
@@ -11,7 +15,7 @@ Since three segments are sent between client and host for connection establishme
 Once a TCP connection is established, the two application processes can send data to each other.
 
 ### TCP Segment Structure:
-![[tcp_segment.png]]
+![tcp_segment](images/tcp_segment.png)
 
 The header includes the following fields:
 
@@ -103,7 +107,7 @@ TCP provides flow-control service to its applications to eliminate the possibili
 
 TCP provides flow control by having the ==sender maintain a variable called the receive window==.
 
-![[rcv_window.png]]
+![rcv_window](images/rcv_window.png)
 
 Receiver tells the sender how much spare room it has in the connection buffer by placing its $\texttt{rwnd}$ value in the $\texttt{receive\_window}$ field for every segment is sends to sender.
 
@@ -119,7 +123,7 @@ To avoid this TCP specification requires the sender to send segments with one by
 
 ### Connection Management:
 
-![[tcp_client_states.png]]
+![tcp_client_states](images/tcp_client_states.png)
 
 
 #### 3-way handshake steps:
@@ -179,7 +183,7 @@ The approach taken by TCP is to have each sender limit the rate at which sends t
 
 #### Congestion Control Algorithm
 
-![[tcp_congestion_control.png]]
+![tcp_congestion_control](images/tcp_congestion_control.png)
 
 ##### 1. Slow Start:
 
@@ -251,7 +255,7 @@ $L$ is the loss rate.
 
 
 #### Fairness
-![[fairness.png]]
+![fairness](images/fairness.png)
 
 It has been shown that when multiple connections share a common bottleneck, those sessions with a smaller $\texttt{RTT}$ are able to grab the available bandwidth at that link more quickly as it becomes free and thus will enjoy higher throughput than those connections with larger $\texttt{RTT}$. 
 

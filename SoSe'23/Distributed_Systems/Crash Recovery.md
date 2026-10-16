@@ -1,3 +1,6 @@
+---
+title: "Crash Recovery"
+---
 COW - Requires atomic write to change the pointers for disk blocks
 persist logs on disk on commit and not the actual changes. These actual changes can be done as a group
 

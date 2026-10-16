@@ -1,3 +1,7 @@
+---
+title: "Sequential Consistency"
+weight: 5
+---
 Our system may execute the operations in a different order than is specified.
 
 The execution is correct if the result of the execution is the same as if the operations had been executed in the order they were specified.
@@ -32,4 +36,4 @@ This consistency model can be actually implemented for distributed systems.
 - To access memory, machine must first acquire lock, operate on locked memory, release lock.
 - This implementation attains SC, total order is determined by the locks movement.
 
-Read: [[IVY - Shared Virtual Memory System]]
+Read: [IVY - Shared Virtual Memory System](Papers%20Summary/IVY%20-%20Shared%20Virtual%20Memory%20System.md)

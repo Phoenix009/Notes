@@ -1,3 +1,7 @@
+---
+title: "DNS - Internets Directory Service"
+weight: 3
+---
 **RFC 1034, 1035: can be referred to get deep understanding**
 
 # Introduction

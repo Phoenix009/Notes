@@ -1,3 +1,7 @@
+---
+title: "Integrity"
+weight: 5
+---
 # MAC - Message Authentication Code
 Encryption in general does not solve the problem of message integrity. 
 

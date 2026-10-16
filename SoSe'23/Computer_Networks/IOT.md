@@ -1,3 +1,7 @@
+---
+title: "IOT"
+weight: 24
+---
 ## Introduction:
 "Things" getting connected to the Internet and getting "Smart"
 

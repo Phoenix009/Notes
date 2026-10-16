@@ -1,8 +1,12 @@
+---
+title: "Key Distribution"
+weight: 6
+---
 - [x] 10.3 - Diffie Hellman Key Exchange
 
 How can the parties share a secret key in the first place?
 
-[[Merkles Puzzle]]
+[Merkles Puzzle](Merkles%20Puzzle.md)
 
 To summarise there are at least three distinct problems related to the use of private key encryption:
 1. key distribution
@@ -34,7 +38,7 @@ However, there are some drawbacks,
 
 
 ## Protocols for key distribution using KDC:
-1. [[Needham-Schroeder Protocol]]
+1. [Needham-Schroeder Protocol](Needham-Schroeder%20Protocol.md)
 
 
 # Key Exchange: Diffie-Hellman Protocol

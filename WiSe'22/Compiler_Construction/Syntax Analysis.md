@@ -118,6 +118,7 @@ Given a grammar $G = (V_{N}, V_{T}, P, S)$ is an $\text{LL}(k)$ where $k$ is a n
 $$
 S \Longrightarrow^* uY\alpha \Longrightarrow u\beta \alpha \Longrightarrow^* ux
 $$
+
 $$
 S \Longrightarrow^* uY\alpha \Longrightarrow u\gamma \alpha \Longrightarrow^* uy
 $$
@@ -163,6 +164,7 @@ $$
 [S \rightarrow aS.b] \rightarrow^b
 [S \rightarrow aSb.]
 $$
+
 $$
 [S \rightarrow .]
 $$

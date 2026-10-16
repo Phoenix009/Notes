@@ -49,6 +49,7 @@ $$L = 6$$
 Possible Combinations,
 $$|S|^L = 62^6$$
 Bits of entropy, 
+
 $$\begin{aligned}
 e &= L \times \frac{\log{S}}{\log{2}} \\
 &= 6 \times \frac{log(62)}{log(2)} \\

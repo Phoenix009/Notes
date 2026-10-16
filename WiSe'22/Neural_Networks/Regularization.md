@@ -44,7 +44,6 @@ To take a single gradient step to update the weights we do
 
 $$
 w = w - \epsilon(\alpha w + \nabla_wJ)\\
-
 w = (1 - \epsilon \alpha)w  - \epsilon \nabla_wJ
 $$
 
@@ -86,7 +85,6 @@ To take a single gradient step to update the weights we do
 
 $$
 w = w - \epsilon(\alpha \text{sign}(w) + \nabla_wJ)\\
-
 w = w - \epsilon \alpha\text{sign}(w)  - \epsilon \nabla_wJ
 $$
 

@@ -20,7 +20,7 @@ The Internet’s network layer has three major components.
 ### Datagram Format:
 ![ip4_datagram](images/ip4_datagram.png)
 
-1. $\texttt{}$$\texttt{Version\#}$ - $\texttt{4b}$ specify the IP Protocol version
+1. $\texttt{Version\#}$ - $\texttt{4b}$ specify the IP Protocol version
    
 2. $\texttt{Header Length}$ - $\texttt{4b}$ Header length is variable due to $\texttt{Options}$
 
@@ -106,7 +106,7 @@ If we want to divide the network into $\texttt{2}$ subnets then $\texttt{1b}$ wi
 
 Ex:
 Consider a $\texttt{Class C}$ Address
-$\texttt{NetworkId = 24b; HostID = 8b}$$\texttt{}$
+$\texttt{NetworkId = 24b; HostID = 8b}$
 For dividing the network into $\texttt{4}$ subnets
 $\texttt{NetworkID = 24b; SubnetID = 2b; HostId = 6b}$
 
@@ -185,7 +185,7 @@ Private IP Address Range:
 
 Private addresses only have meaning within a given network, *how is addressing handled when packets are sent to or received from the global internet?* The answer lies in $\texttt{NAT}$.
 
-$\texttt{NAT}$ router behaves to the outside world as a single device with a single $\texttt{}$$\texttt{IP Address}$. In essence, the $\texttt{NAT}$ router is hiding the details of the network from the outside world.
+$\texttt{NAT}$ router behaves to the outside world as a single device with a single $\texttt{IP Address}$. In essence, the $\texttt{NAT}$ router is hiding the details of the network from the outside world.
 
 ![NAT_translation](images/NAT_translation.png)
 

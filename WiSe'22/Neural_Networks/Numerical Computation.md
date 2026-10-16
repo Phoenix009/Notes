@@ -74,7 +74,6 @@ To minimize $f$, we would like to find the direction in which $f$  decreases the
 
 $$
 \min_{u} u^{\top}\nabla_{x}f(x) = \\
-
 \min_{u}\|u\|_{2}\|\nabla_{x}f(x)\|_{2}\cos(\theta)
 $$
 

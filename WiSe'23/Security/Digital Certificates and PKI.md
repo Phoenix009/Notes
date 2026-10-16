@@ -9,6 +9,7 @@ One of the primary applications of digital signatures includes the secure distri
 The key notion here is a digital certificate, which is simply a signature binding an entity to a public key. 
 
 To be concrete, a party Charlie has generated a key pair $(pk_C, sk_C)$ for a secure digital signature scheme. Another party Bob also has generated a key pair $(pk_B, sk_B)$. Charlie knows that $pk_B$ is Bobs public key Then Charlie can compute the signature
+
 $$
 \text{cert}_{C \rightarrow B} = \text{Sign}_{sk_C}(\text{Bob's public key is }pk_B)
 $$
@@ -49,11 +50,13 @@ Alice who is presented with a certificate or even multiple certificates issued b
 Another approach that alleviates the burden from a single CA. This approach however does not address the security concerns of having a Single point of failure.
 
 Consider Charlie acting as a CA issues a certificate to Bob as in our original discussion. Bob in turn can issue his own certificates for other parties. Ex: Bob can issue certificate for Alice
+
 $$
 \text{cert}_{B \rightarrow A} = \text{Sign}_{sk_B}(\texttt{Alices's public key is }pk_A)
 $$
 
 Now if Alice wants to communicate with some fourth party Dave who knows Charlies public key but not Bob's, then Alice can send 
+
 $$
 pk_A,\ cert_{B \rightarrow A},\ pk_B,\ cert_{C \rightarrow B}
 $$

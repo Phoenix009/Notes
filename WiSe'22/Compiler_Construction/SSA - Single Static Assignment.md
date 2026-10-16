@@ -37,15 +37,19 @@ In expression where the variable is used is replaced with a $\phi(x_{1}, x_{2},.
 $$
 [;]^{\#}C := C
 $$
+
 $$
 [x \leftarrow e;]^{\#}C := C[x \mapsto [e]^{\#}C]
 $$
+
 $$
 [x \leftarrow M[e];]^{\#}C := C[x \mapsto \top]
 $$
+
 $$
 [M[e] \leftarrow x;]^{\#}C := C
 $$
+
 $$
 [x_{0} \leftarrow \phi(x_{1}, x_{w}, ..., x_{n})]^{\#}C := C[x_{0} \mapsto \bigsqcup_{1 \le i \le n}C(x_{i})]
 $$
@@ -65,7 +69,6 @@ Cooperation between two domains:
 
 $$
 \mathbb{C}:\text{Vars} \rightarrow \mathbb{Z}^{\top}_{\bot} \\
-
 \mathbb{U}: \text{Blocks} \rightarrow \{ \top_{U}, \bot_{U} \}
 $$
 
@@ -73,7 +76,6 @@ Two transfer functions per program point:
 
 $$
 f^{\#}_{i}: \mathbb{C} \times \mathbb{U} \mapsto \mathbb{C}\\
-
 g^{\#}_{i}: \mathbb{C} \times \mathbb{U} \mapsto \mathbb{U}
 $$
 
@@ -81,7 +83,6 @@ Solve system of equations:
 
 $$
 x \sqsupseteq \bigsqcup_{i}f^{\#}_{i}(x_{i}) \\
-
 y \sqsupseteq \bigsqcup_{i}g^{\#}_{i}(y_{i})
 $$
 

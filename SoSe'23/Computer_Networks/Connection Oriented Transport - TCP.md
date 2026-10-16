@@ -65,6 +65,7 @@ $$
 
 
 #### Setting and Managing the timeout:
+
 $$
 \texttt{Timeout} = \texttt{EstimatedRTT} + 
 4 * \texttt{DevRTT}

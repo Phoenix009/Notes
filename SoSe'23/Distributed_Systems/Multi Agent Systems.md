@@ -12,7 +12,7 @@ Receiving the data at the slowest receiver:
 - Time required = $F/d_{\min}$
 
 Thus, File Distribution Time:
-$$\max\{\frac{NF}{u_s}, \frac{F}{d_\min}\}$$
+$$\max\{\frac{NF}{u_s}, \frac{F}{d_{\min}}\}$$
 We can speed up the file distribution by:
 1. Increasing the server upload rate: requires higher link bandwidth, multiple servers
 2. **Have the receivers help**: Receivers redistribute to other receivers
@@ -22,7 +22,7 @@ Upload time using all upload resources:
 - time required = $NF/\{u_s + \sum_i(u_i)\}$
 
 Thus, File Distribution Time:
-$$\max\{\frac{NF}{u_s}, \frac{F}{d_\min}, \frac{NF}{u_s + \sum_i(u_i)}\}$$
+$$\max\{\frac{NF}{u_s}, \frac{F}{d_{\min}}, \frac{NF}{u_s + \sum_i(u_i)}\}$$
 
 **Challenges**:
 - Peers come and go

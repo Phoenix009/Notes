@@ -50,20 +50,15 @@ We know the distribution over a set of variables and we want to know the distrib
 Suppose we have discrete random variables $\texttt{x}$ and $\texttt{y}$, and we know $P(\texttt{x}, \texttt{y})$. We can find $P(\texttt{x})$ with the sum rule.
 
 $$
-
 P(\texttt{x}=x) =
-
 \sum_{y}{P(x, y)}
-
 $$
 
 For continuous random variable and $PMF$ we can write
+
 $$
-
 p(\texttt{x}=x) =
-
 \int{P(x, y)}.dy
-
 $$
 
   
@@ -77,46 +72,34 @@ These two events happen in one single experiment and not one after another.
 We denote the conditional probability that $\texttt{y}=y$ given that $\texttt{x}=x$ is given by $P(\texttt{y}=y \mid \texttt{x}=x)$
 
 $$
-
 P(\texttt{y}=y \mid \texttt{x}=x) = \frac
-
 {P(\texttt{y}=y,\texttt{x}=x)}
-
 {P(\texttt{x}=x)}
-
 $$
 
 A joint probability distribution over many random variables may be decomposed into conditional distributions over only one variable
+
 $$
-
 P(a, b, c) =
-
 P(a \mid b, c)
-
 P(b \mid c)
-
 P(c)
-
 $$
 
   
 # Expectation Variance and CoVariance:
 
 The expectation or expected value of some function $f(x)$ with respect to a probability distribution $P(\texttt{x})$ is the average value that $f$ takes on when $x$ is drawn from $P$.
+
 $$
-
 \mathbb{E}(f(x)) =
-
 \mathbb{E}_{\texttt{x} \sim P}[f(x)] =
-
 \sum_{x}P(x)f(x)
-
 $$
 Variance gives a measure of how much the values of a function of a random variable $\texttt{x}$ vary as we sample different $x$ from its distribution.
+
 $$
-
 \text{Var}(f(x)) = \mathbb{E}[(f(x) - \mathbb{E}[f(x)])^2]
-
 $$
 
   
@@ -155,6 +138,7 @@ Parameterized by a vector $p \in [0, 1]^{k-1}$, where $p_i$ gives the probabilit
 ## 3. Gaussian Distribution:
 
 Also known as the normal distribution
+
 $$
 \mathcal{N}(x;\mu, \sigma^2)
 $$
@@ -173,9 +157,7 @@ Many complicated systems can be modeled as normally distributed noise, even if t
 We wish to specify that all of the mass in a probability distribution clusters around a single point. This can be done using defining a Dirac Delta function $\delta(x)$
 
 $$
-
 p(x) = \delta(x - \mu)
-
 $$
 
 The dirac delta function is defined such that it is zero every where except at $0$, still integrates to $1$

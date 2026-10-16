@@ -240,7 +240,6 @@ Let $p_{model}(x;\theta)$  be the parameteric family of probability distribution
 
 $$
 \theta_{\text{ML}} = \arg \max_{\theta}  p_{model}(\mathbb{X}; \theta) \\
-
 = \arg \max_{\theta} \prod_{i = 1}^{m} p_{model}(x^{(i)}; \theta)
 $$
 

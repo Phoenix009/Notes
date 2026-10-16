@@ -149,6 +149,7 @@ How do we compute a solution for the in-equation systems?
 
 - ACC - Ascending Chain Conditions:
 	An ordered set $P$ fulfils the ascending chain condition, if for every sequence
+	
 	$$
 	x_1 \le x_2 \cdots x_n \le x_i \in P
 	$$
@@ -157,12 +158,14 @@ How do we compute a solution for the in-equation systems?
 - Lifting:
 	Let $(P, \le)$ be an ordered set/complete lattice.
 	Let $V$ be a set. $(V\rightarrow P, \sqsubseteq)$ is an ordered set/complete lattice with 
+	
 	$$
 	a \sqsubseteq b : \ \ \forall v \in V, \  a(v) \le b(v)
 	$$
 
 - Knaster-Tarski Fixpoint Theorem:
 	Let $L$ be a complete lattice and $f: L \rightarrow L$ be a monotone function. then
+	
 	$$
 	\bigwedge \{ f(x) \le x \ |\   x \in L \}
 	$$
@@ -229,9 +232,11 @@ If there exists one state where the variable is assigned and is not assigned in 
 $$
 [x\leftarrow e]^{\#}_{cp}C = C[x \mapsto [e]]^{\#}_{cp}
 $$
+
 $$
 [x\leftarrow M[e]]^{\#}_{cp}C = C[x \mapsto \top]
 $$
+
 $$
 [M[e]\leftarrow x]^{\#}_{cp}C = C
 $$
@@ -241,9 +246,11 @@ $$
 $$
 [a \oplus b]^{\#}_{cp}C = [a]^{\#}_{cp}C \oplus^{\#} [b]^{\#}_{cp}C
 $$
+
 $$
 [c]^{\#}_{cp}C = c
 $$
+
 $$
 [x]^{\#}_{cp}C = Cx
 $$
@@ -272,9 +279,11 @@ For every reachable program point $*u*$ we can determine the reachability inform
 $$
 [u \rightarrow true(e) \rightarrow v ]^{\#}C, U =  U[v \mapsto \top_{U}\  \text{if} \  [e]^{\#}C \rightarrow \text{true}]
 $$
+
 $$
 [u \rightarrow false(e) \rightarrow v ]^{\#}C, U =  U[v \mapsto \top_{U}\  \text{if} \  [e]^{\#}C \rightarrow \text{false}]
 $$
+
 $$
 [u \rightarrow v ]^{\#}C, U =  U[v \mapsto U[u]]
 $$
@@ -337,10 +346,12 @@ A trace $t$ is a sequence of configurations.
 A finite prefix trace semantics is the set of all program executions.
 
 We can define the following monotone function.
+
 $$
 F(T) = \{(r, \sigma) | \sigma \in \Sigma\} 
 $$
 with
+
 $$
  (p, \sigma) → (q, \sigma') \Longrightarrow \sigma' = f_{pq}(\sigma)
 $$
@@ -348,6 +359,7 @@ $$
 for an edge between program point $p$ with concrete state $\sigma$ and $q$ with concrete state $\sigma'$
 
 Define the concretisation of constant propagation $V \rightarrow (Vars \rightarrow Z_{\bot}^{\top})$ to traces
+
 $$
 \gamma(C) = \{ t \in \text{Conf}^*| (p, \sigma) \in t \Rightarrow \sigma \in \gamma_{\mathbb{S}}(Cp) \}
 $$
@@ -363,6 +375,7 @@ and two monotone functions $F:\mathbb{C} \rightarrow \mathbb{C}$ and $F^{\#}:\ma
 for which the transformer correctness holds: $F \circ \gamma \subseteq \gamma \circ F^{\#}$
 
 then,
+
 $$
 \text{lfp}F \subseteq \gamma(\text{lfp}F^{\#})
 $$
@@ -438,7 +451,6 @@ Therefore, one also gets a closure operator that gives the best abstraction in $
 for a given abstraction
 
 $$
-
 \langle b, s\rangle \mapsto \langle b^*, s^* \rangle \ \ \ \ b \in \text{interval} \ \  \& \ \ s \in \text{SUB}
 $$
 
@@ -488,7 +500,6 @@ Let $T$ be the set of terms over a set of variables.
 The Herbrand interpretation $\mathscr{T}$ of an $n$-ary operator $\omega$ is given as
 
 $$
- 
 \mathscr{T}(\omega): T^n \mapsto T \\ \mathscr{T}(\omega)(t_{1}, t_{2}, ..., t_{n}) := \omega(t_{1}, t_{2}, ..., t_{n}) 
 $$
 
@@ -505,9 +516,7 @@ Herbrand Semantics $\langle t \rangle \sigma$ of a term t as follows
 $$
 \langle t \rangle \sigma = \begin {cases} 
     \sigma(v) &\quad \text{if t = v is a variable} \\
-
     \mathscr{T}(\omega)(\langle t_{1}\rangle \sigma,..., \langle t_{n}\rangle \sigma,) &\quad \text{if t =} \omega(t_{1}, ..., t_{n})
-
 \end{cases}
 $$
 
@@ -527,7 +536,6 @@ For each operator $\omega$, each relation $R$ and for $e_{1}, e_{2}, ... \in \te
 
 $$
 e_{1}Re^{'}_{1}\ \  \text{and } e_{2}Re^{'}_{2} \Rightarrow
-
 (e_{1} \omega e_{2})R(e^{'}_{1} \omega e^{'}_{2})
 $$
 

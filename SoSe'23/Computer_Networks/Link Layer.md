@@ -98,11 +98,13 @@ by adding $R$ on both sides
 $$
 D.2^r \texttt{ XOR } R \texttt{ XOR } R = nG \texttt{ XOR } R
 $$
+
 $$
 D.2^r= nG \texttt{ XOR } R \\
 $$
 
 thus, 
+
 $$
 R = D.2^r \mod G
 $$
@@ -199,6 +201,7 @@ The ==binary exponential backoff== is used in Ethernet and elegantly solves this
 When a transmitting frame has experienced $n$ collisions, a node chooses $K$ at random from $\{0, 1, \dots, 2^n -1\}$. For ethernet, the actual amount of time a node waits is $K.512$ bit times, which is $K$ times the time it takes to send $512b$ in the ethernet.
 
 The efficiency is given by 
+
 $$
 \frac{1}{1 + 5t_{prop} / t_{trans}}
 $$

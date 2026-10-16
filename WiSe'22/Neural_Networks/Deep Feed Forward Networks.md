@@ -99,6 +99,7 @@ The role of the output layer is then to provide some additional transformation f
 ## 1. Linear Units for Gaussian Output Distribution:
 
 One simple kind of output unit is an output unit based on an affine transformation with no non-linear activation function.
+
 $$
 J(\theta) = -\mathbb{E}_{\texttt{x}, \texttt{y} \sim \hat{p}_{data}} \log p_{model}(y|x)
 $$
@@ -258,7 +259,6 @@ Neural networks are organized into groups of units called layers. Most neural ne
 
 $$
 h^{(1)} = g^{(1)}(W^{(1)\top}x + b^{(1)}) \\
-
 h^{(2)} = g^{(2)}(W^{(2)\top}h^{(1) }+ b^{(2)})
 $$
 

@@ -41,7 +41,7 @@ The job of delivering the data in transport layer segment to the appropriate soc
 
 the job of gathering data chunks at the source host from different sockets, and passing the segments to the network layer is called multiplexing.
 
-A process can have one or more sockets, through which data passes from the network to the process and through which data passes form the process to the network.
+A process can have one or more sockets, through which data passes from the network to the process and through which data passes from the process to the network.
 
 Transport layer multiplexing requires:
 1. sockets have unique identifiers.

@@ -78,13 +78,13 @@ We have studied the network as a collection of interconnected routers. This mode
 	Ideally, an organisation should be able to run and administer its network as it wishes, while still being able to connect it network to other outside networks.
 
 
-These problems can be solved by organising routers into ==autonomous systems (AS)==, with each As consisting of a group of routers that are typically under the same administrative control. 
+These problems can be solved by organising routers into ==autonomous systems (AS)==, with each AS consisting of a group of routers that are typically under the same administrative control. 
 
 The routing algorithm running within an autonomous system is called ==INTRA-autonomous system routing protocol==. One of the routers in AS has the additional task of forwarding packets to destinations outside AS; these routers are called ==gateway routers==.
 
 How does a router within some AS know how to route a packet to a destination that is outside the AS?
 
-The problem of knowing where to forward the packet becomes significantly more challenging when there are multiple gateway routers. We need to know which destinations are reachable by each ASs reachable by each gateway router. We also need to propagate this information to all routers within the AS. These tasks are handled by the ==INTER-autonomous system routing protocol==. 
+The problem of knowing where to forward the packet becomes significantly more challenging when there are multiple gateway routers. We need to know which destinations are reachable by each AS's, reachable by each gateway router. We also need to propagate this information to all routers within the AS. These tasks are handled by the ==INTER-autonomous system routing protocol==. 
 
 Thus, each router receives information from both inter and intra protocols, and uses this information to configure its forwarding table.
 
@@ -97,7 +97,6 @@ Suppose, there is a case where the destination is reachable by two different gat
 Intra-AS routing protocols are also known as interior gateway protocols. Two protocols have been used extensively for routing within an AS in the internet: 
 - Routing Information Protocol (RIP)
 - Open Shortest Path First (OSPF)
-
 
 ##### RIP - Routing Information Protocol:
 

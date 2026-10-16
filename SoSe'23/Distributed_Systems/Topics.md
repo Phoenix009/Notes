@@ -1,4 +1,4 @@
-1. [[Concurrency]]
+1. [[Notes/SoSe'23/Distributed_Systems/Concurrency]]
 2. [[Remote Procedure Call]]
 3. [[Consistency]]
 	1. [[Strict Consistency]]

@@ -160,7 +160,7 @@ The approach taken by TCP is to have each sender limit the rate at which sends t
 
 1. How Does a TCP sender limit the rate at which it sends traffic?
     
-    TCP congestion control mechanism at the sender maintains an addiitional variable the $\texttt{cwnd}$ congestion window. This imposes a constraint on the rate at which a TCP sender can send traffic into the network.
+    TCP congestion control mechanism at the sender maintains an additional variable the $\texttt{cwnd}$ congestion window. This imposes a constraint on the rate at which a TCP sender can send traffic into the network.
     
     $$
     \texttt{\#UnACK bytes <= min\{cwnd, rwnd\}} 

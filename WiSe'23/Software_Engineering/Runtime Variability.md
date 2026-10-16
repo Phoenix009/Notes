@@ -11,7 +11,7 @@ There are many ways to set configuration parameters:
 
 ## Discussion:
 - Implementing variability with parameters is straightforward.
-- Variation is evaluated at run time when conditional statements are executed. 
+- **Variation is evaluated at run time when conditional statements are executed.** 
 - This approach shares the usual benefits and drawbacks of runtime binding.
 
 | Criteria               | Comment                                               |
@@ -169,7 +169,7 @@ Similar to runtime-parameters, but with the following distinctions.
 ## White Box Frameworks:
 - ==**White-box frameworks** consist of a set of concrete and abstract classes.== 
 - To customise their behaviour, developers extend white-box frameworks by overriding and adding methods through **subclassing**.
-- the while box comes from the fact that developers need to understand the frameworks internals. 
+- the white box comes from the fact that developers need to understand the frameworks internals. 
 - All non-private fields and methods can be regarded as hotspots of the framework, providing additional flexibility.
 - When using while box frameworks for product line variability, we can only add one subclass at a time to a given class, but not mix and match multiple extensions. Hence, as the template method design pattern, while box frameworks are **best suited for implementing alternative features**.
 ---

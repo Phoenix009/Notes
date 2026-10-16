@@ -94,19 +94,19 @@ A ==resource record is a five length tuple== that contains the following fields:
 - Class: Usually `IN` for internet
 - TTL: Is the time-to-live field; it determines when a resource should be removed from a cache.
 
-|Type|Name|Value|
-|:--:|--|--|
-| `A`|hostname|IPv4 Address|
-| `AAAA`|hostname|IPv6 Address|
-| `NS` | Domain | hostname of Authoritative DNS Server |
-| `CNAME` | alias hostname | Canonical hostname |
-| `PTR` | IP Address | hostname |
+|  Type   | Name           | Value                                |
+| :-----: | -------------- | ------------------------------------ |
+|   `A`   | hostname       | IPv4 Address                         |
+| `AAAA`  | hostname       | IPv6 Address                         |
+|  `NS`   | Domain         | hostname of Authoritative DNS Server |
+| `CNAME` | alias hostname | Canonical hostname                   |
+|  `PTR`  | IP Address     | hostname                             |
 
 
 # Inserting records into DNS Database:
 
 A registrar is a commercial entity that verifies the uniqueness of the domain name, enters the domain name into the DNS database, and collects a small fee for its services.
 
-When we register a domainname with some registrat we also provide the name and the IP address of our primary and secondary authoritative DNS servers.
+When we register a domainname with some registrar we also provide the name and the IP address of our primary and secondary authoritative DNS servers.
 
 Registrar will add $\texttt{Type A}$ and $\texttt{Type NS}$ records in the TLD DNS servers.
